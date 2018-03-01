@@ -1,0 +1,6 @@
+Referencias iniciais de RSSF (Redes de Sensores Sem Fio)
+LOUREIRO(2006)
+RUIZ(2004)
+TILAKetal(2002)
+GESSINGER(2005)
+FERNANDEZetal(2013)

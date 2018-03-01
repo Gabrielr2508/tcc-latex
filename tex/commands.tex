@@ -1,0 +1,135 @@
+% User commands
+\usepackage{xcolor}
+\newcommand\myworries[1]{\textcolor{red}{[#1]}}
+
+% Pacotes fundamentais
+\usepackage{helvet}			% Usa a fonte Latin Modern
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{tikz}				% Inclusão de gráficos
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+% Pacotes adicionais, usados no anexo do modelo de folha de identificação
+\usepackage{multicol}
+\usepackage{multirow}
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+\usepackage{lipsum}				% para geração de dummy text
+% Pacotes de citações
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf,abnt-etal-list=3,abnt-etal-cite=3]{abntex2cite}	% Citações padrão ABNT
+\usepackage{pdflscape}
+\usepackage{listings}			% inserir codigo fonte
+\usepackage{footnote}
+\usepackage{pdfpages}
+\usepackage{caption}
+
+% [leolleo] meus pacotes
+\usepackage{booktabs}
+\usepackage{adjustbox}
+\usepackage{subcaption}
+\usepackage[labelfont=bf]{caption}
+\usepackage{gensymb}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{float}
+\usepackage{xcolor,colortbl}
+\usepackage{longtable}
+\usepackage{scalefnt}
+% [leolleo] meus comandos (peguei do tex exchange)
+
+\usepackage{tocloft}
+% -- permite a adição de células especiais em tabelas
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\newcounter{equationset}
+\newcommand{\equationset}[1]{% \equationset{<caption>}
+  \refstepcounter{equationset}% Step counter
+  \noindent\makebox[\linewidth]{Equação ~\theequationset: #1}
+ }
+
+\renewcommand{\ABNTEXchapterfont}{\fontseries{b}}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXsectionfont}{\fontseries{m}}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXsubsectionfont}{\fontseries{b}}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+
+
+%-------
+
+% CONFIGURAÇÕES DE PACOTES
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		%Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+
+
+% Configurações de aparência do PDF final
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title},
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{relatório técnico},
+		colorlinks=true,			% false: boxed links; true: colored links
+    	linkcolor=black,				% color of internal links
+    	citecolor=black,				% color of links to bibliography
+    	filecolor=black,			% color of file links
+		urlcolor=black,
+		bookmarksdepth=4
+}
+\makeatother
+% ---
+
+% ---
+% Espaçamentos entre linhas e parágrafos
+% ---
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+
+\newcommand{\imagem}[4]
+{%			\imagem{x.x}{nomeimg}{titulo}{fonte}
+	\begin{figure}[!htb]
+		\caption{\label{img:#2}#3}
+		\begin{center}
+			\includegraphics[scale=#1]{img/#2}
+		\end{center}
+        \legend{\textbf{Fonte:} #4}
+	\end{figure}
+}%
+
+\newcommand{\xx} {$\bigotimes$}
+\newcommand{\oo} {$\bigcirc$}
+

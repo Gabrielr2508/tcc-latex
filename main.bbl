@@ -1,0 +1,308 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[ANDROID 2017]{SITEANDROID2}
+\abntrefinfo{ANDROID}{ANDROID}{2017a}
+{ANDROID. \emph{\textup{\textup{\textbf{Android Developers}}}}. 2017.
+Dispon{\'\i}vel em: \url{https://source.android.com/setup/}. Acesso em:
+  Fevereiro de 2018.}
+
+\bibitem[ANDROID 2017]{SITEANDROID}
+\abntrefinfo{ANDROID}{ANDROID}{2017b}
+{ANDROID. \emph{\textup{\textup{\textbf{The Android Source Code}}}}. 2017.
+Dispon{\'\i}vel em: \url{https://developer.android.com}. Acesso em: Agosto de
+  2017.}
+
+\bibitem[Araujo et al. 2008]{araujo2008levantamento}
+\abntrefinfo{Araujo et al.}{ARAUJO et al.}{2008}
+{ARAUJO, E.~L. et al. \textbf{Levantamento e flutuação populacional de
+  mocas-das-frutas (Diptera: Tephritidae) em goiaba Psidium guajava L., No
+  município de Russas (CE)}.
+\emph{Revista Caatinga}, Universidade Federal Rural do Semi-{\'A}rido, v.~21,
+  n.~1, 2008.}
+
+\bibitem[Arcuri 2017]{arcuri2017restful}
+\abntrefinfo{Arcuri}{ARCURI}{2017}
+{ARCURI, A. \textbf{RESTful API Automated Test Case Generation}. In:  IEEE.
+  \emph{Software Quality, Reliability and Security (QRS)}. [S.l.], 2017. p.
+  9--20.}
+
+\bibitem[Braga e Valle 2007]{BRAGA2007}
+\abntrefinfo{Braga e Valle}{BRAGA; VALLE}{2007}
+{BRAGA, I.~A.; VALLE, D. \textbf{Aedes aegypti:} histórico do controle no
+  brasil.
+\emph{Epidemiologia e Serviços de Saúde,}, Brasília, v.~16, n.~2, p.
+  113--118, jun. 2007.}
+
+\bibitem[Calore et al. 2013]{calore2013fatores}
+\abntrefinfo{Calore et al.}{CALORE et al.}{2013}
+{CALORE, R.~A. et al. \textbf{Fatores clim{\'a}ticos na din{\^a}mica
+  populacional de Anastrepha spp.(Diptera: Tephritidae) e de Scymnus
+  spp.(Coleoptera: Coccinellidae) em um pomar experimental de goiaba (Psidium
+  guajava L.)}.
+\emph{Revista Brasileira de Fruticultura}, Sociedade Brasileira de
+  Fruticultura, p. 67--74, 2013.}
+
+\bibitem[Conte, Mendes e Travassos 2005]{conte2005processos}
+\abntrefinfo{Conte, Mendes e Travassos}{CONTE; MENDES; TRAVASSOS}{2005}
+{CONTE, T.; MENDES, E.; TRAVASSOS, G.~H. \textbf{Processos de desenvolvimento
+  para aplica{\c{c}}{\~o}es web:} uma revis{\~a}o sistem{\'a}tica. In:
+  \emph{Proceedings of the 11th Brazilian Symposium on Multimedia and Web
+  (WebMedia 2005)}. [S.l.: s.n.], 2005. v.~1, p. 107--116.}
+
+\bibitem[Dalmasso et al. 2013]{dalmasso2013survey}
+\abntrefinfo{Dalmasso et al.}{DALMASSO et al.}{2013}
+{DALMASSO, I. et al. \textbf{Survey, comparison and evaluation of cross
+  platform mobile application development tools}. In:  IEEE. \emph{Wireless
+  Communications and Mobile Computing Conference (IWCMC), 2013 9th
+  International}. [S.l.], 2013. p. 323--328.}
+
+\bibitem[{DAVIS INSTRUMENTS} 2006]{SITEVARIAVEIS}
+\abntrefinfo{{DAVIS INSTRUMENTS}}{{DAVIS INSTRUMENTS}}{2006}
+{{DAVIS INSTRUMENTS}. \emph{\textup{\textbf{Derived Variables in Davis Weather
+  Products}}}. 2006.
+Dispon{\'\i}vel em:
+  \url{https://www.davisnet.com/support/derived-variables-in-davis-weather-products/}.
+  Acesso em: Setembro de 2017.}
+
+\bibitem[{DAVIS INSTRUMENTS} 2008]{WLIP}
+\abntrefinfo{{DAVIS INSTRUMENTS}}{{DAVIS INSTRUMENTS}}{2008}
+{{DAVIS INSTRUMENTS}. \emph{\textup{\textbf{WeatherLinkIP™ for Vantage Pro®
+  and Vantage Pro2™}}}. 2008.
+Dispon{\'\i}vel em:
+  \url{http://www.davisnet.com/product\_documents/weather/spec\_sheets/6555\_spec\_WeatherLinkIP.pdf}.
+  Acesso em: Agosto de 2017.}
+
+\bibitem[{DAVIS INSTRUMENTS} 2009]{VVINSTMANUAL}
+\abntrefinfo{{DAVIS INSTRUMENTS}}{{DAVIS INSTRUMENTS}}{2009a}
+{{DAVIS INSTRUMENTS}. \emph{\textup{\textbf{Vantage Vue \textsuperscript{TM}:}
+  Manual de Instalação do Conjunto de Sensores Integrados}}. 2009.
+Dispon{\'\i}vel em:
+  \url{http://www.agrosystem.com.br/static/files/produtos/manual\_instalacao\_iss\_vantagevue\_color\_rgb\_q1-1455821923-t.pdf}.
+  Acesso em: Agosto de 2017.}
+
+\bibitem[{DAVIS INSTRUMENTS} 2009]{VVCINSTMANUAL}
+\abntrefinfo{{DAVIS INSTRUMENTS}}{{DAVIS INSTRUMENTS}}{2009b}
+{{DAVIS INSTRUMENTS}. \emph{\textup{\textbf{Vantage Vue \textsuperscript{TM}:}
+  Manual do Console}}. 2009.
+Dispon{\'\i}vel em:
+  \url{http://www.agrosystem.com.br/static/files/produtos/manual\_instalacao\_iss\_vantagevue\_color\_rgb\_q1-1455821923-t.pdf}.
+  Acesso em: Agosto de 2017.}
+
+\bibitem[{DAVIS INSTRUMENTS} 2013]{VSPDOC}
+\abntrefinfo{{DAVIS INSTRUMENTS}}{{DAVIS INSTRUMENTS}}{2013}
+{{DAVIS INSTRUMENTS}. \emph{\textup{\textbf{Vantage Pro \textsuperscript{TM},
+  Vantage Pro2 \textsuperscript{TM} and Vantage Vue \textsuperscript{TM} Serial
+  Communication Reference Manual}}}. 2013.
+Dispon{\'\i}vel em:
+  \url{http://www.davisnet.com/support/weather/download/VantageSerialProtocolDocs\_v261.pdf}.
+  Acesso em: Outubro de 2017.}
+
+\bibitem[{DAVIS INSTRUMENTS} 2017]{SITEDAVIS}
+\abntrefinfo{{DAVIS INSTRUMENTS}}{{DAVIS INSTRUMENTS}}{2017}
+{{DAVIS INSTRUMENTS}. \emph{\textup{\textbf{Davis Instruments}}}. 2017.
+Dispon{\'\i}vel em: \url{http://www.davisnet.com/solution/vantage-vue/}. Acesso
+  em: Agosto de 2017.}
+
+\bibitem[Depradine e Lovell 2004]{depradine2004climatological}
+\abntrefinfo{Depradine e Lovell}{DEPRADINE; LOVELL}{2004}
+{DEPRADINE, C.; LOVELL, E. \textbf{Climatological variables and the incidence
+  of Dengue fever in Barbados}.
+\emph{International journal of environmental health research}, Taylor \&
+  Francis, v.~14, n.~6, p. 429--441, 2004.}
+
+\bibitem[Fielding e Taylor 2000]{fielding2000architectural}
+\abntrefinfo{Fielding e Taylor}{FIELDING; TAYLOR}{2000}
+{FIELDING, R.~T.; TAYLOR, R.~N. \emph{\textbf{Architectural styles and the
+  design of network-based software architectures}}. [S.l.]: University of
+  California, Irvine Doctoral dissertation, 2000.}
+
+\bibitem[Fraternali e Paolini 1998]{fraternali1998conceptual}
+\abntrefinfo{Fraternali e Paolini}{FRATERNALI; PAOLINI}{1998}
+{FRATERNALI, P.; PAOLINI, P. \textbf{A conceptual model and a tool environment
+  for developing more scalable, dynamic, and customizable web applications}.
+\emph{Advances in Database Technology—EDBT'98}, Springer, p. 419--435, 1998.}
+
+\bibitem[Gandhewar e Sheikh 2010]{gandhewar2010google}
+\abntrefinfo{Gandhewar e Sheikh}{GANDHEWAR; SHEIKH}{2010}
+{GANDHEWAR, N.; SHEIKH, R. \textbf{Google Android:} an emerging software
+  platform for mobile devices.
+\emph{International Journal on Computer Science and Engineering}, v.~1, n.~1,
+  p. 12--17, 2010.}
+
+\bibitem[Garcia e Corseuil 1998]{garcia1998influencia}
+\abntrefinfo{Garcia e Corseuil}{GARCIA; CORSEUIL}{1998}
+{GARCIA, F. R.~M.; CORSEUIL, E. \textbf{Influ{\^e}ncia de fatores
+  clim{\'a}ticos sobre moscas-das-frutas (Diptera: Tephritidae) em pomares de
+  pessegueiro em Porto Alegre, Rio Grande do Sul.}
+\emph{Revista da FZVA}, v.~5, n.~1, 1998.}
+
+\bibitem[{GOOGLE ANGULAR} 2017]{SITEANGULAR}
+\abntrefinfo{{GOOGLE ANGULAR}}{{GOOGLE ANGULAR}}{2017}
+{{GOOGLE ANGULAR}. \emph{\textup{\textbf{Angular}}}. 2017.
+Dispon{\'\i}vel em: \url{https://angular.io}. Acesso em: Agosto de 2017.}
+
+\bibitem[Hopp e Foley 2001]{hopp2001global}
+\abntrefinfo{Hopp e Foley}{HOPP; FOLEY}{2001}
+{HOPP, M.~J.; FOLEY, J.~A. \textbf{Global-scale relationships between climate
+  and the dengue fever vector, Aedes aegypti}.
+\emph{Climatic change}, Springer, v.~48, n.~2, p. 441--463, 2001.}
+
+\bibitem[Hsieh, Hsieh e Cheng 2016]{hsieh2016method}
+\abntrefinfo{Hsieh, Hsieh e Cheng}{HSIEH; HSIEH; CHENG}{2016}
+{HSIEH, C.-Y.; HSIEH, H.-A.; CHENG, Y.~C. \textbf{A method for web application
+  data migration based on RESTful API: A case study of ezScrum}. In:  IEEE.
+  \emph{Applied System Innovation (ICASI), 2016 International Conference on}.
+  [S.l.], 2016. p.~1--4.}
+
+\bibitem[Imperato e Raga 2015]{TIE2015}
+\abntrefinfo{Imperato e Raga}{IMPERATO; RAGA}{2015}
+{IMPERATO, R.; RAGA, A. \textbf{Técnica do Inseto Estéril}.
+\emph{Agência Paulista de Tecnologia dos Agronegócios}, Campinas, p. 1--16,
+  out. 2015.}
+
+\bibitem[{IONIC FRAMEWORK} 2017]{SITEIONIC}
+\abntrefinfo{{IONIC FRAMEWORK}}{{IONIC FRAMEWORK}}{2017}
+{{IONIC FRAMEWORK}. \emph{\textup{\textbf{Ionic Framework}}}. 2017.
+Dispon{\'\i}vel em: \url{https://ionicframework.com}. Acesso em: Agosto de
+  2017.}
+
+\bibitem[Kurose e Ross 2005]{james2005redes}
+\abntrefinfo{Kurose e Ross}{KUROSE; ROSS}{2005}
+{KUROSE, J.; ROSS, K. \emph{\textup{\textbf{Redes de Computadores e a
+  Internet:} Uma abordagem top-down}}. São Paulo: Pearson Addison Wesley,
+  2005.}
+
+\bibitem[Malavasi e Zucchi 2000]{malavasi2000moscas}
+\abntrefinfo{Malavasi e Zucchi}{MALAVASI; ZUCCHI}{2000}
+{MALAVASI, A.; ZUCCHI, R.~A. \textbf{Moscas-das-frutas de import{\^a}ncia
+  econ{\^o}mica no Brasil}.
+Holos, 2000.}
+
+\bibitem[Mendes, Mosley e Counsell 2005]{mendes2005investigating}
+\abntrefinfo{Mendes, Mosley e Counsell}{MENDES; MOSLEY; COUNSELL}{2005}
+{MENDES, E.; MOSLEY, N.; COUNSELL, S. \textbf{Investigating Web size metrics
+  for early Web cost estimation}.
+\emph{Journal of Systems and Software}, Elsevier, v.~77, n.~2, p. 157--172,
+  2005.}
+
+\bibitem[{MONGODB, Inc.} 2017]{SITEMONGODB}
+\abntrefinfo{{MONGODB, Inc.}}{{MONGODB, Inc.}}{2017}
+{{MONGODB, Inc.} \emph{\textup{\textbf{MongoDB}}}. 2017.
+Dispon{\'\i}vel em: \url{https://www.mongodb.com}. Acesso em: Agosto de 2017.}
+
+\bibitem[{MOSCAMED} 2003]{MOSCAMED2003CTI}
+\abntrefinfo{{MOSCAMED}}{{MOSCAMED}}{2003a}
+{{MOSCAMED}. \emph{\textup{\textbf{Folder Ciência, Técnologia e Inovação
+  para a Agricultura no Brasil}}}. Juazeiro: [s.n.], 2003.}
+
+\bibitem[{MOSCAMED} 2003]{MOSCAMEDINST2003}
+\abntrefinfo{{MOSCAMED}}{{MOSCAMED}}{2003b}
+{{MOSCAMED}. \emph{\textup{\textbf{Folder Institucional}}}. Juazeiro: [s.n.],
+  2003.}
+
+\bibitem[{MOSCAMED} 2010]{MOSCAMED2010LINHAS}
+\abntrefinfo{{MOSCAMED}}{{MOSCAMED}}{2010a}
+{{MOSCAMED}. \emph{\textup{\textbf{Folder Linhas de Ação}}}. Juazeiro:
+  [s.n.], 2010.}
+
+\bibitem[{MOSCAMED} 2010]{MOSCAMED2010AREAS}
+\abntrefinfo{{MOSCAMED}}{{MOSCAMED}}{2010b}
+{{MOSCAMED}. \emph{\textup{\textbf{Folder Áreas de Atuação}}}. Juazeiro:
+  [s.n.], 2010.}
+
+\bibitem[Palmieri, Singh e Cicchetti 2012]{palmieri2012comparison}
+\abntrefinfo{Palmieri, Singh e Cicchetti}{PALMIERI; SINGH; CICCHETTI}{2012}
+{PALMIERI, M.; SINGH, I.; CICCHETTI, A. \textbf{Comparison of cross-platform
+  mobile development tools}. In:  IEEE. \emph{Intelligence in Next Generation
+  Networks (ICIN), 2012 16th International Conference on}. [S.l.], 2012. p.
+  179--186.}
+
+\bibitem[Paranhos 2008]{paranhos2008moscas}
+\abntrefinfo{Paranhos}{PARANHOS}{2008}
+{PARANHOS, B. \textbf{Moscas-das-frutas que oferecem riscos {\`a} fruticultura
+  brasileira}. In:  IN: SIMP{\'O}SIO INTERNACIONAL DE VITIVINICULTURA, 1.;
+  FEIRA NACIONAL DA AGRICULTURA IRRIGADA-FENAGRI, EMBRAPA SEMI-{\'A}RIDO.
+  Petrolina, 2008.}
+
+\bibitem[Pastor 2004]{pastor2004fitting}
+\abntrefinfo{Pastor}{PASTOR}{2004}
+{PASTOR, O. \textbf{Fitting the pieces of the Web engineering puzzle}.
+\emph{Invited Talk, XVIII Simp{\'o}sio Brasileiro de Engenharia de Software
+  (SBES), Bras{\'\i}lia}, 2004.}
+
+\bibitem[Pressman 2000]{pressman2000tangled}
+\abntrefinfo{Pressman}{PRESSMAN}{2000}
+{PRESSMAN, R.~S. \textbf{What a tangled web we weave [web engineering]}.
+\emph{IEEE Software}, IEEE, v.~17, n.~1, p. 18--21, 2000.}
+
+\bibitem[Raga e {SOUSA FILHO} 2000]{raga2000manejo}
+\abntrefinfo{Raga e {SOUSA FILHO}}{RAGA; {SOUSA FILHO}}{2000}
+{RAGA, A.; {SOUSA FILHO}, M. \textbf{Manejo e monitoramento de
+  moscas-das-frutas}.
+\emph{Reuni{\~a}o Itinerante de Fitossanidade do Instituto Biol{\'o}gico},
+  v.~3, p. 87--99, 2000.}
+
+\bibitem[Raj e Tolety 2012]{raj2012study}
+\abntrefinfo{Raj e Tolety}{RAJ; TOLETY}{2012}
+{RAJ, C.~R.; TOLETY, S.~B. \textbf{A study on approaches to build
+  cross-platform mobile applications and criteria to select appropriate
+  approach}. In:  IEEE. \emph{India Conference (INDICON), 2012 Annual IEEE}.
+  [S.l.], 2012. p. 625--629.}
+
+\bibitem[Ribeiro et al. 2006]{ribeiro2006associaccao}
+\abntrefinfo{Ribeiro et al.}{RIBEIRO et al.}{2006}
+{RIBEIRO, A.~F. et al. \textbf{Associa{\c{c}}{\~a}o entre incid{\^e}ncia de
+  dengue e vari{\'a}veis clim{\'a}ticas}.
+\emph{Revista de Sa{\'u}de P{\'u}blica}, SciELO Public Health, v.~40, n.~4, p.
+  671--676, 2006.}
+
+\bibitem[Saha 2008]{saha2008developer}
+\abntrefinfo{Saha}{SAHA}{2008}
+{SAHA, A.~K. \textbf{A developer’s first look at Android}.
+\emph{Linux For You,(January)}, p. 48--50, 2008.}
+
+\bibitem[Sampaio e {ROCHA NETO} 2005]{SITESEQ}
+\abntrefinfo{Sampaio e {ROCHA NETO}}{SAMPAIO; {ROCHA NETO}}{2005}
+{SAMPAIO, M.~C.; {ROCHA NETO}, E. \emph{\textup{\textbf{Diagramas de
+  Sequência}}}. 2005.
+Dispon{\'\i}vel em:
+  \url{http://www.dsc.ufcg.edu.br/~jacques/cursos/map/html/uml/diagramas/interacao/sequencia.htm}.
+  Acesso em: Setembro de 2017.}
+
+\bibitem[Sommerville 2011]{sommerville2011engenharia}
+\abntrefinfo{Sommerville}{SOMMERVILLE}{2011}
+{SOMMERVILLE, I. \emph{\textbf{Engenharia de Software}}. 9. ed. [S.l.: s.n.],
+  2011.}
+
+\bibitem[Tilkov e Vinoski 2010]{tilkov2010node}
+\abntrefinfo{Tilkov e Vinoski}{TILKOV; VINOSKI}{2010}
+{TILKOV, S.; VINOSKI, S. \textbf{Node.js:} using javascript to build
+  high-performance network programs.
+\emph{IEEE Internet Computing}, IEEE, v.~14, n.~6, p. 80--83, 2010.}
+
+\bibitem[Torres 2001]{torres2001completo}
+\abntrefinfo{Torres}{TORRES}{2001}
+{TORRES, G. \emph{\textbf{Redes de Computadores Curso Completo}}. 1. ed. Rio de
+  Janeiro: Axcel Books do Brasil Editora Ltda, 2001.}
+
+\bibitem[Torres et al. 2015]{torres2015aquisicao}
+\abntrefinfo{Torres et al.}{TORRES et al.}{2015}
+{TORRES, J.~D. et al. \textbf{Aquisi{\c{c}}{\~a}o de dados meteorol{\'o}gicos
+  atrav{\'e}s da plataforma Arduino:} constru{\c{c}}{\~a}o de baixo custo e
+  an{\'a}lise de dados.
+\emph{Scientia Plena}, v.~11, n.~2, 2015.}
+
+\bibitem[Ventura 2016]{SITEDIAGATIV}
+\abntrefinfo{Ventura}{VENTURA}{2016}
+{VENTURA, P. \emph{\textup{\textbf{Entendendo o Diagrama de Atividades da
+  UML}}}. 2016.
+Dispon{\'\i}vel em:
+  \url{http://www.ateomomento.com.br/uml-diagrama-de-atividades/}. Acesso em:
+  Setembro de 2017.}
+
+\end{thebibliography}

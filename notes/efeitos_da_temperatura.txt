@@ -1,0 +1,55 @@
+-- 10.17660@ActaHortic.2000.509.57
+
+Title: The effect of cultivar, fruit ripeness, storage temperature and duration on quality of fresh-cut mango
+
+Authors: R. Allong, L. D. Wickham and M. Mohammed
+
+A temperatura de armazenamneto tem efeito variado na vida útil do fruto, além de depender de fatores diversos. Cultivares de manga foram analisados sob a ótica de algumas métricas em relação ao armazenamento a 5ºC e 10ºC. Dentre elas o comportamento da vida útil variou entre ambas as temperaturas e cultivares analisados.
+
+-- 197.full
+
+Title: Heat Treatment Inhibits Mango Chilling Injury
+
+Authors: T. Gregory McCollum, Salvatore D'Aquino and Roy E. McDonald
+
+Tratamento por calor, em mangas, pode aumentar sua resistência à injúrias pelo frio, consequentemente permitindo um armazenamento por um maior período de tempo, mantendo a qualidade.
+
+-- 430.full
+
+Title: Ripening of Mangos Following Low-temperature Storage
+
+Authors: A. P. Medlicott, J. M. M. Sigrist and O. Sy
+
+Fatores como estágio de maturação, temperatura de armazenamento e tempo de colheita na estação. Mangas são frutas sensíveis à injúrias pelo frio. Frutas colhidas em fases de maturação menos avançada tiveram um maior tempo de armazenamento do que mangas colhidas em estágios mais avançados, porém apresentaram menor qualidade. A temperatura ótima de armazenamento pode ser influenciada pela cultivar, estágio de maturação quando colhida e maturação quando armazenada.
+
+O trabalho estudou os efeitos da "maturidade na colheita", período de armazenamento e temperatura, e o "tempo de colheita na estaçaõ" no potencial de armazenamento e desenvolvimento de qualidade no amadurecimento subsequente à transferência à temperaturas mais altas.
+
+-- a08v38n1
+
+Title: Qualidade pós-colheita de frutos de butiá em função do estádio de maturação na colheita e do manejo da temperatura
+
+Authors: Cassandro Vidal Talamini do Amarante e Clarice Aparecida Megguer
+
+Estuda os efeitos do estádio de maturação nacolheita, da temperautra de armazenamento e do tempo para o resfriamento na preservação da qualidade pós-colheita de frutos de butiá. Frutos colhidos do "estágio de maturação" verdes foram maiores, porém eles apresentaram qualidade inferior (caracterizada por altos valores de acidez total titulável, ATT, e baixos valores de SST em relação aos colhidos nos estádios verde-amarelo e amarelo.
+
+Frutos denominados climatéricos apresentam produção autocatalítica de etileno e climatério respiratório, e continuam os processos de amadurecimento após a colheita. Frutos não climatéricos não amadurecem após a colheita.Consequentemente, frutos climatéricos podem ser colhidos em estágios menos avançados de maturação, visando a uma melhor preservação da sua qualidade durante o manuseio e armazenamento, ainda assim amadurecendo após a colheita.
+
+-- lurie1998
+
+Title: Post harvest heat treatments
+
+Authors: Susan Lurie
+
+O artigo discute o resultado da aplicação de tratamentos térmicos em frutos logo após a colheita. São discutidos efeitos de banhos hidrotérmicos, tratamento por vapor e por ar quente (estes últimos estáticos e dinâmicos). Tais tratamentos são realizados para livrar os produtos de fungos e doenças, e podem possuir efeitos em aspéctos físicos e qualitativos do fruto em sua vida pós-colheita, como maior vida útil, sabor ou firmeza em comparação com frutos que não passaram por nenhum tratamento. Esse tipo de pesquisa de acordo com o artigo tem sido predominantemente empírica, faltando modelos (comentário feito na conclusão) para previsão da resposta dos produtos (commodities response).
+
+-- maul2000
+
+Title: Tomato flavor and aroma quality as affected by storage temperature
+
+Authors: F. Maul, S. A. Sargent, C. A. SIMS, E. A. Baldwin, M. O. BALABAN, D. J. Huber
+
+Estuda o efeito do armazenamento em diferentes temperaturas no aroma e sabor de tomates. Frutos armazenados em temperaturas maiores apresentaram melhor sabor.
+
+** PONTOS IMPORTANTES **
+
+Alguns frutos sofrem tratamento térmico antes de armazenados em baixas temperaturas, em um tratamento com mangas isso diminuiu susa sensibilidade ao frio. Além disso, o amadurecimento do fruto continua quando transferido baixas temperaturas (armazemento) às prateleiras, quando comercializado (altas temperaturas).

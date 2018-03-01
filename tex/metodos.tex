@@ -1,0 +1,71 @@
+\chapter{Materiais e Métodos} \label{ch:MM}
+
+Este capítulo tem como finalidade descrever o projeto de \textit{software} através da metodologia utilizada, de maneira a elucidar as várias facetas e componentes do sistema como um todo. O capítulo está dividido nas seguintes partes: Projeto de software e Tecnologias utilizadas. A figura \ref{img:visao_geral}  demonstra o panorama geral do projeto e o contexto onde cada componente está inserido.
+
+\imagem{0.22}{visao_geral}{Visão geral do sistema}{O autor}
+
+A suíte de sensores da estação meteorológica (a) transmite as informações captadas por ondas de rádio para o seu console (b) que as exibe localmente em sua tela. A API (d) requisita para o \textit{datalogger} as informações contidas no console. O \textit{datalogger} (c) captura essas informações e responde a requisição. A API então processa as informações colhidas, salva os dados no banco e disponibiliza-os através da internet (e) para a aplicação cliente (f).
+
+
+
+\section{Tecnologias  utilizadas}
+
+\subsection{\textit{Ionic Framework}} \label{subsec:Ionic}
+
+O \textit{Ionic Framework} é um SDK que permite o desenvolvimento de aplicações multi-plataformas (\textit{Web, Android, iOS}) através de tecnologias \textit{Web} bem estabelecidas (HTML, CSS e JavaScript). O \textit{framework} é suportado pela tecnologia Angular \cite{SITEIONIC}.
+
+Angular é uma plataforma, mantida pela Google, que torna fácil a criação de aplicações \textit{Web} cliente através de combinações entre \textit{templates} declarativos, injeção de dependências e ferramentas ponta-a-ponta \cite{SITEANGULAR}.
+
+No caso do \textit{Ionic Framework}, o Angular é responsável pelo pilar base da arquitetura, a API de componentes. Os componentes são os blocos de construção da interface de usuário do aplicativo móvel \cite{SITEIONIC}.
+
+A escolha desse \textit{framework} deve-se ao fato dele ser completamente gratuito, de código aberto (licenciado sob a licença MIT) e seguir o modelo de arquitetura \textit{cross-platform} híbrida (figura \ref{img:hybrid}), possibilitando a utilização de tecnologias \textit{Web} para construção de aplicativos e também a distribuição/instalação do \textit{APP} via o \textit{Market Place} da plataforma Android \cite{SITEIONIC}. O Ionic será empregado no desenvolvimento da interface de usuário do sistema, ou seja, o \textit{front-end} da aplicação.
+
+\imagem{0.4}{hybrid}{Modelo de aplicação \textit{cross-platform} híbrida}{\citeonline{raj2012study} (Traduzido)}
+
+
+\subsection{Node.js} \label{subsec:NodeJs}
+
+O \text{Node.js} é um ambiente de tempo de execução JavaScript assíncrono baseado em eventos, construído sobre o motor JavaScript V8 da Google rodando do lado do servidor. Surgiu com o propósito de possibilitar a criação de aplicações de rede escaláveis. O paradigma baseado em eventos permite múltiplas conexões de diversos clientes ao servidor de forma eficiente, escalável e oferecendo muito mais controle para o desenvolvedor sobre as atividades de sua aplicação \cite{tilkov2010node}.
+    
+O \textit{Node.js} será utilizado no escopo deste projeto para criação de um serviço responsável pela obtenção dos dados da estação meteorológica, empregando uma comunicação serial através de um \textit{socket TCP}, e pela inserção posterior desses no banco de dados. Haverá também outro serviço para a recuperação dos dados à serem usados na aplicação cliente, ou seja, o serviço terá o papel de fornecer uma API que por meio de requisições HTTP insira e recupere informações da base de dados.
+
+A motivação da escolha dessa tecnologia é baseada nas duas características seguintes, o código do software é aberto e o fato da tecnologia também usar JavaScript torna natural a integração com aplicações \textit{cross-platform} que utilizam da mesma linguagem de programação. Além de facilitar a comunicação com a base de dados.
+
+
+\subsection{MongoDB} \label{subsec:MongoDB}
+
+O MongoDB é um banco de dados não relacional baseado em documentos, que armazena os dados em um formato semelhante ao JSON. O software é grátis e de código aberto, licenciado sob a \textit{GNU Affero General Public License}. É adotado por grandes empresas como \textit{Adobe, Twitter, GitHub e Amazon}. A adoção desse banco de dados é justificada pela sua consistência, velocidade, escalabilidade e facilidade de utilização \cite{SITEMONGODB}. Além disso, os dados a serem trabalhados são do tipo chave-valor simples e não requerem uma base de dados relacional.
+
+O banco de dados será usado majoritariamente para guardar as informações das variáveis climáticas provenientes das leituras da estação meteorológica, com a finalidade de manter um histórico das variações. Pois, o armazenamento disponível na estação é limitado e os dados são substituídos por novos à medida que as novas leituras ocorrem.
+
+
+
+%\section{Cronograma} \label{sec:crono}
+
+%A tabela \ref{tab:cronograma} mostra o cronograma de atividades a serem executadas para o TCC II, com base no calendário de 2017.2 da UNIVASF.
+
+%\newpage
+%\begin{table}[!thb]
+%	%\huge
+%    \centering
+%    \caption{\label{tab:cronograma} Cronograma das atividades previstas para o TCC II}
+%%    \begin{adjustbox}{max width=\textwidth}
+%    \begin{tabular}{p{6.5cm}|c|c|c|c|c|c}
+%    \toprule
+%    \textbf{Atividade}                      & Nov & Dez & Jan & Fev & Mar & Abr \\ \hline
+%    Implementar o banco de dados              & X    & X     &       &        &          &          \\ \hline
+%    Desenvolver a API HTTP RESTful                      &   X   & X     &       &        &          &          \\ \hline
+%    Implementar o serviço de captura de dados via \textit{socket} TCP        &      &      & X     &   X     &          &          \\ \hline
+%    Desenvolver a aplicação \textit{Web/mobile} para exibição dos dados         &      &      & X     &   X     &     X     &          \\ \hline
+ %   Teste do sistema            &      &       &       &        & X        &          %\\ \hline
+ %   Escrita do TCC II                       &   X   & X     & X     & X      & X        & X        \\ \hline
+%   Defesa do TCC II                        &      &       &       &        &          & X       \\
+%    \bottomrule
+ %   \end{tabular}
+ %   \end{adjustbox}
+%    \legend{\textbf{Fonte:} O autor.}
+%\end{table}
+
+%As primeiras etapas consistem no desenvolvimento das camadas de \textit{software} discutidas na seção \ref{sec:PS}, na ordem: camada de dados, camada da API, camada de obtenção dos dados e por fim a camada de usuário. 
+
+%Na etapa de teste do sistema, serão efetuados testes para verificar a ocorrência de erros/\textit{bugs} e a fidelidade entre os dados mostrados pelo sistema e os dados mostrados pelo console da estação. Ademais, o \textit{software} cliente será verificado quanto a correta implementação dos casos de uso identificados e discutidos na subseção \ref{subsec:casosDeUso}.
