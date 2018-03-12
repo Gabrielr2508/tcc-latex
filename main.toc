@@ -5,38 +5,42 @@
 \contentsline {section}{\numberline {1.2}Objetivos gerais}{15}{section.1.2}
 \contentsline {section}{\numberline {1.3}Objetivos espec\IeC {\'\i }ficos}{15}{section.1.3}
 \contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o do trabalho}{15}{section.1.4}
-\contentsline {chapter}{\chapternumberline {2}Referencial te\IeC {\'o}rico}{16}{chapter.2}
-\contentsline {section}{\numberline {2.1}Moscamed, a institui\IeC {\c c}\IeC {\~a}o e a t\IeC {\'e}cnica}{16}{section.2.1}
-\contentsline {section}{\numberline {2.2}A esta\IeC {\c c}\IeC {\~a}o meteorol\IeC {\'o}gica e a influ\IeC {\^e}ncia das condi\IeC {\c c}\IeC {\~o}es clim\IeC {\'a}ticas nas esp\IeC {\'e}cies controladas pela Moscamed}{17}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}A influ\IeC {\^e}ncia do clima na mosca-das-frutas}{19}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}A influ\IeC {\^e}ncia do clima no mosquito-da-dengue}{20}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Sistema Operacional Android}{22}{section.2.3}
+\contentsline {chapter}{\chapternumberline {2}Referencial te\IeC {\'o}rico}{17}{chapter.2}
+\contentsline {section}{\numberline {2.1}Moscamed, a institui\IeC {\c c}\IeC {\~a}o e a t\IeC {\'e}cnica}{17}{section.2.1}
+\contentsline {section}{\numberline {2.2}A esta\IeC {\c c}\IeC {\~a}o meteorol\IeC {\'o}gica e a influ\IeC {\^e}ncia das condi\IeC {\c c}\IeC {\~o}es clim\IeC {\'a}ticas nas esp\IeC {\'e}cies controladas pela Moscamed}{18}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}A influ\IeC {\^e}ncia do clima na mosca-das-frutas}{20}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}A influ\IeC {\^e}ncia do clima no mosquito-da-dengue}{21}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Sistema Operacional Android}{23}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Caracter\IeC {\'\i }sticas e Arquitetura}{23}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Aplica\IeC {\c c}\IeC {\~o}es Web}{24}{section.2.4}
-\contentsline {section}{\numberline {2.5}Aplica\IeC {\c c}\IeC {\~o}es Multiplataformas}{25}{section.2.5}
-\contentsline {section}{\numberline {2.6}API RESTful}{26}{section.2.6}
-\contentsline {section}{\numberline {2.7}Socket TCP}{27}{section.2.7}
-\contentsline {chapter}{\chapternumberline {3}Materiais e M\IeC {\'e}todos}{29}{chapter.3}
-\contentsline {section}{\numberline {3.1}Projeto de Software}{29}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Requisitos do sistema}{30}{subsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.1}Requisitos funcionais}{31}{subsubsection.3.1.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.2}Requisitos n\IeC {\~a}o funcionais}{31}{subsubsection.3.1.1.2}
-\contentsline {subsection}{\numberline {3.1.2}Arquitetura do sistema}{31}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Tecnologias utilizadas}{33}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}\textit {Ionic Framework}}{33}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Node.js}{34}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}MongoDB}{34}{subsection.3.2.3}
-\contentsline {chapter}{\chapternumberline {4}Resultados e Discuss\IeC {\~o}es}{35}{chapter.4}
-\contentsline {section}{\numberline {4.1}Projeto de Software}{35}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Casos de uso}{35}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Diagrama de sequ\IeC {\^e}ncia}{40}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Diagrama de atividades}{42}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Interface com o usu\IeC {\'a}rio}{43}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}A API do sistema}{45}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}Modelo de dados do sistema}{46}{subsection.4.1.6}
-\contentsline {chapter}{\chapternumberline {5}Conclus\IeC {\~a}o e Trabalhos Futuros}{48}{chapter.5}
+\contentsline {section}{\numberline {2.4}Aplica\IeC {\c c}\IeC {\~o}es Web}{25}{section.2.4}
+\contentsline {section}{\numberline {2.5}Aplica\IeC {\c c}\IeC {\~o}es Multiplataformas}{26}{section.2.5}
+\contentsline {section}{\numberline {2.6}API RESTful}{27}{section.2.6}
+\contentsline {section}{\numberline {2.7}Socket TCP}{28}{section.2.7}
+\contentsline {chapter}{\chapternumberline {3}Materiais e M\IeC {\'e}todos}{30}{chapter.3}
+\contentsline {section}{\numberline {3.1}Projeto de Software}{30}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Requisitos do sistema}{31}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Requisitos funcionais}{32}{subsubsection.3.1.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Requisitos n\IeC {\~a}o funcionais}{32}{subsubsection.3.1.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Arquitetura do sistema}{32}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Tecnologias utilizadas}{34}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}\textit {Ionic Framework}}{34}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Node.js}{35}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}MongoDB}{35}{subsection.3.2.3}
+\contentsline {chapter}{\chapternumberline {4}Resultados e Discuss\IeC {\~o}es}{36}{chapter.4}
+\contentsline {section}{\numberline {4.1}M\IeC {\'o}dulos do sistema}{36}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}M\IeC {\'o}dulo de captura dos dados}{36}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}M\IeC {\'o}dulo de gerenciamento dos dados}{37}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}M\IeC {\'o}dulo de exibi\IeC {\c c}\IeC {\~a}o dos dados}{37}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Diagramas de Engenharia de Software}{37}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Casos de uso}{38}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Diagrama de sequ\IeC {\^e}ncia}{42}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Diagrama de atividades}{44}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Interface com o usu\IeC {\'a}rio}{45}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}A API do sistema}{47}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Modelo de dados do sistema}{48}{subsection.4.2.6}
+\contentsline {chapter}{\chapternumberline {5}Conclus\IeC {\~a}o e Trabalhos Futuros}{50}{chapter.5}
 \vspace {\cftbeforepartskip }
-\contentsline {chapter}{Refer\^encias}{49}{section*.32}
+\contentsline {chapter}{Refer\^encias}{51}{section*.33}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
-\contentsline {appendix}{\chapternumberline {A}Comandos seriais da esta\IeC {\c c}\IeC {\~a}o meteorol\IeC {\'o}gica \textit {Vantage Vue\IeC {\texttrademark }}}{53}{appendix.anexochapback.1}
+\contentsline {appendix}{\chapternumberline {A}Comandos seriais da esta\IeC {\c c}\IeC {\~a}o meteorol\IeC {\'o}gica \textit {Vantage Vue\IeC {\texttrademark }}}{56}{appendix.anexochapback.1}

@@ -1,7 +1,43 @@
 \chapter{Resultados e Discussões} \label{ch:RD}
 
-\section{Projeto de Software} \label{sec:PS}
 
+Neste capítulo são apresentados os resultados obtidos com o projeto da arquitetura dos módulos do sistema e o seu desenvolvimento, juntamente com a documentação, os diagramas de engenharia de \textit{software} e o protótipo composto pela interface de usuário e a parte lógica do sistema.
+
+
+\section{Módulos do sistema} \label{subsec:modules}
+
+\subsection{Módulo de captura dos dados} 
+
+O módulo de captura dos dados têm seu funcionamento ilustrado na figura \ref{img:capturadados}. Como dito anteriormente, periodicamente este módulo obtém informações da estação meteorológica \textit{Vantage Vue™} e os armazena na base de dados por meio do módulo de gerenciamento de dados. Para cumprir sua função, o módulo foi dividido em três \textit{scripts} escritos em \textit{Javascript} e executados em \textit{Node.js}. 
+
+\imagem{0.55}{capturadados}{Módulos de captura e gerenciamento dos dados}{O autor}
+
+O primeiro \textit{script}, Script Agendador (a), é responsável por executar, a cada intervalo pré-determinado de tempo, uma \textit{thread} composta pelo Script Cliente (b). O Script Driver é um programa que se conecta à estação meteorológica utilizando \textit{socket TCP}, envia um comando de \textit{LOOP} (ver anexo \ref{anex:anexo1}), recebe a resposta do comando contendo os dados e converte as unidades de medida. O Script Cliente possui o papel de criar uma instância do Script Driver (c), e após o recebimento dos dados, salvá-los na base de dados por intermédio de uma requisição HTTP para a API RESTful.
+
+O agendador do Node.js possui a mesma sintaxe do GNU crontab \cite{SITEGNUCRONTAB, SITEVIVALINUXCRONTAB, NODECRON} onde cada asterisco representa uma medida de tempo de acordo com o seguinte padrão:
+ 
+\centerline{[minutos] [horas] [dias do mês] [mês] [dias da semana]}
+
+Configuração do intervalo de tempo no Script Agendador
+
+%\sourcecode{Configuração do intervalo de execução no Script Agendador}{cron}{shell-session}{cron.js}
+
+No exemplo acima o Script Cliente é executado por uma \textit{thread} a cada 15 (quinze) minutos.
+
+\subsection{Módulo de gerenciamento dos dados}
+
+O módulo de gerenciamento dos dados é formado pela API do sistema e pela base de dados. A API possui rotas relacionadas ao gerenciamento dos dados climáticos e aos dados dos usuários, como pode ser observado na subseção \ref{subsec:api}. Também foi construída utilizando-se da linguagem \textit{Javascript} e do ambiente de execução \textit{Node.js}, incluindo o modelo de documentos dos usuários e dos dados climáticos.
+ 
+O servidor de banco de dados executa uma base não relacional baseada em documentos chamada MongoDB (ver subseções \ref{subsec:MongoDB} e \ref{subsec:datamodel}).
+
+ \subsection{Módulo de exibição dos dados}
+
+O módulo de exibição dos dados é constituído apenas da aplicação \textit{Ionic}, também escrita em \textit{Javascript}, porém com a adição de HTML e de CSS para construção das páginas. Neste caso, o \textit{Javascript} é empregado para dar funcionalidades às páginas renderizadas pelo HTML juntamente com CSS.
+
+A aplicação Ionic pode ser compilada tanto para \textit{Web}, quanto para as principais plataformas móveis, devido a isso foi adotada tal tecnologia no projeto. O funcionamento da aplicação está detalhado na subseção \ref{subsec:interfaceComOUsurario}.
+
+
+\section{Diagramas de Engenharia de Software} \label{sec:diagramas}
 A etapa inicial no desenvolvimento de \textit{software} é compreender os relacionamentos entre o \textit{software} em projeto e o seu ambiente exterior. Esta etapa é essencial porque mostra como se dará a estrutura do sistema para se comunicar com o seu ambiente e quais serão os limites estabelecidos para o mesmo. A definição do sistema informa quais serão as funcionalidades implementadas e os recursos disponíveis \cite{sommerville2011engenharia}.
 
 Os diagramas abordados serão o de caso de uso, de sequência e de atividade. Esses três diagramas proporcionam uma visão geral de cada etapa do funcionamento do sistema. Além disso, será discutido também um modelo de documento referente ao banco de dados adotado.

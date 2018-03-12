@@ -5,6 +5,14 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
+\bibitem[Alecrim 2005]{SITEVIVALINUXCRONTAB}
+\abntrefinfo{Alecrim}{ALECRIM}{2005}
+{ALECRIM, E. \emph{\textup{\textbf{Usando cron e crontab para agendar
+  tarefas}}}. 2005.
+Dispon{\'\i}vel em:
+  \url{https://www.vivaolinux.com.br/artigo/Usando-cron-e-crontab-para-agendar-tarefas}.
+  Acesso em: Março de 2018.}
+
 \bibitem[ANDROID 2017]{SITEANDROID2}
 \abntrefinfo{ANDROID}{ANDROID}{2017a}
 {ANDROID. \emph{\textup{\textup{\textbf{Android Developers}}}}. 2017.
@@ -218,12 +226,25 @@ Dispon{\'\i}vel em:
   \url{https://www.devmedia.com.br/introducao-a-requisitos-de-software/29580}.
   Acesso em: Março de 2018.}
 
+\bibitem[Mellor 2014]{SITEGNUCRONTAB}
+\abntrefinfo{Mellor}{MELLOR}{2014}
+{MELLOR, D. \emph{\textup{\textbf{Crontab Files}}}. 2014.
+Dispon{\'\i}vel em:
+  \url{https://www.gnu.org/software/mcron/manual/html\_node/Crontab-file.html}.
+  Acesso em: Março de 2018.}
+
 \bibitem[Mendes, Mosley e Counsell 2005]{mendes2005investigating}
 \abntrefinfo{Mendes, Mosley e Counsell}{MENDES; MOSLEY; COUNSELL}{2005}
 {MENDES, E.; MOSLEY, N.; COUNSELL, S. \textbf{Investigating Web size metrics
   for early Web cost estimation}.
 \emph{Journal of Systems and Software}, Elsevier, v.~77, n.~2, p. 157--172,
   2005.}
+
+\bibitem[Merencia 2017]{NODECRON}
+\abntrefinfo{Merencia}{MERENCIA}{2017}
+{MERENCIA, L. \emph{\textup{\textbf{node-cron}}}. 2017.
+Dispon{\'\i}vel em: \url{https://www.npmjs.com/package/node-cron}. Acesso em:
+  Março de 2018.}
 
 \bibitem[{MONGODB, Inc.} 2017]{SITEMONGODB}
 \abntrefinfo{{MONGODB, Inc.}}{{MONGODB, Inc.}}{2017}
