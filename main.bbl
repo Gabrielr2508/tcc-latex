@@ -31,6 +31,14 @@ Dispon{\'\i}vel em: \url{https://developer.android.com}. Acesso em: Agosto de
   \emph{Software Quality, Reliability and Security (QRS)}. [S.l.], 2017. p.
   9--20.}
 
+\bibitem[Bernardo 2015]{SITEINTERATIVOINCREMENTAL}
+\abntrefinfo{Bernardo}{BERNARDO}{2015}
+{BERNARDO, K. \emph{\textup{\textbf{Iterativo e incremental: Suas
+  definições}}}. 2015.
+Dispon{\'\i}vel em:
+  \url{https://www.culturaagil.com.br/iterativo-e-incremental-suas-definicoes/}.
+  Acesso em: Março de 2018.}
+
 \bibitem[Braga e Valle 2007]{BRAGA2007}
 \abntrefinfo{Braga e Valle}{BRAGA; VALLE}{2007}
 {BRAGA, I.~A.; VALLE, D. \textbf{Aedes aegypti:} histórico do controle no
@@ -46,6 +54,13 @@ Dispon{\'\i}vel em: \url{https://developer.android.com}. Acesso em: Agosto de
   guajava L.)}.
 \emph{Revista Brasileira de Fruticultura}, Sociedade Brasileira de
   Fruticultura, p. 67--74, 2013.}
+
+\bibitem[{CASA DA CONSULTORIA} 2017]{SITECASCATA1}
+\abntrefinfo{{CASA DA CONSULTORIA}}{{CASA DA CONSULTORIA}}{2017}
+{{CASA DA CONSULTORIA}. \emph{\textup{\textbf{Modelo Cascata: O que é e como
+  funciona?}}} 2017.
+Dispon{\'\i}vel em: \url{http://casadaconsultoria.com.br/modelo-cascata/}.
+  Acesso em: Março de 2018.}
 
 \bibitem[Conte, Mendes e Travassos 2005]{conte2005processos}
 \abntrefinfo{Conte, Mendes e Travassos}{CONTE; MENDES; TRAVASSOS}{2005}
@@ -121,6 +136,11 @@ Dispon{\'\i}vel em: \url{http://www.davisnet.com/solution/vantage-vue/}. Acesso
   design of network-based software architectures}}. [S.l.]: University of
   California, Irvine Doctoral dissertation, 2000.}
 
+\bibitem[Filho 2003]{engsoftwilson}
+\abntrefinfo{Filho}{FILHO}{2003}
+{FILHO, W. de P.~P. \emph{Engenharia de Software: fundamentos, métodos e
+  padrões}. [S.l.]: LTC, 2003. v.~2.}
+
 \bibitem[Fraternali e Paolini 1998]{fraternali1998conceptual}
 \abntrefinfo{Fraternali e Paolini}{FRATERNALI; PAOLINI}{1998}
 {FRATERNALI, P.; PAOLINI, P. \textbf{A conceptual model and a tool environment
@@ -182,6 +202,21 @@ Dispon{\'\i}vel em: \url{https://ionicframework.com}. Acesso em: Agosto de
 {MALAVASI, A.; ZUCCHI, R.~A. \textbf{Moscas-das-frutas de import{\^a}ncia
   econ{\^o}mica no Brasil}.
 Holos, 2000.}
+
+\bibitem[Medeiros 2017]{SITECASCATA2}
+\abntrefinfo{Medeiros}{MEDEIROS}{2017a}
+{MEDEIROS, H. \emph{\textup{\textbf{Introdução ao Modelo Cascata}}}. 2017.
+Dispon{\'\i}vel em:
+  \url{https://www.devmedia.com.br/introducao-ao-modelo-cascata/29843}. Acesso
+  em: Março de 2018.}
+
+\bibitem[Medeiros 2017]{introrequisitos}
+\abntrefinfo{Medeiros}{MEDEIROS}{2017b}
+{MEDEIROS, H. \emph{\textup{\textbf{Introdução a Requisitos de Software}}}.
+  2017.
+Dispon{\'\i}vel em:
+  \url{https://www.devmedia.com.br/introducao-a-requisitos-de-software/29580}.
+  Acesso em: Março de 2018.}
 
 \bibitem[Mendes, Mosley e Counsell 2005]{mendes2005investigating}
 \abntrefinfo{Mendes, Mosley e Counsell}{MENDES; MOSLEY; COUNSELL}{2005}
@@ -260,6 +295,12 @@ Dispon{\'\i}vel em: \url{https://www.mongodb.com}. Acesso em: Agosto de 2017.}
   dengue e vari{\'a}veis clim{\'a}ticas}.
 \emph{Revista de Sa{\'u}de P{\'u}blica}, SciELO Public Health, v.~40, n.~4, p.
   671--676, 2006.}
+
+\bibitem[Royce 1970]{royce1970managing}
+\abntrefinfo{Royce}{ROYCE}{1970}
+{ROYCE, W.~W. Managing the development of large systems: Concepts and
+  techniques. In:  \emph{9th International Conference on Software Engineering.
+  ACM}. [S.l.: s.n.], 1970. p. 328--38.}
 
 \bibitem[Saha 2008]{saha2008developer}
 \abntrefinfo{Saha}{SAHA}{2008}

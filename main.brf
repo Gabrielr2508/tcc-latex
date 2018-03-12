@@ -1,10 +1,10 @@
-\backcite {MOSCAMEDINST2003}{{13}{1}{chapter.1}}
-\backcite {BRAGA2007}{{13}{1}{chapter.1}}
-\backcite {paranhos2008moscas}{{13}{1}{chapter.1}}
-\backcite {raga2000manejo}{{13}{1}{chapter.1}}
-\backcite {malavasi2000moscas}{{13}{1}{chapter.1}}
-\backcite {hopp2001global, ribeiro2006associaccao}{{13}{1}{chapter.1}}
-\backcite {hopp2001global, ribeiro2006associaccao}{{13}{1}{chapter.1}}
+\backcite {MOSCAMEDINST2003}{{14}{1}{chapter.1}}
+\backcite {BRAGA2007}{{14}{1}{chapter.1}}
+\backcite {paranhos2008moscas}{{14}{1}{chapter.1}}
+\backcite {raga2000manejo}{{14}{1}{chapter.1}}
+\backcite {malavasi2000moscas}{{14}{1}{chapter.1}}
+\backcite {hopp2001global, ribeiro2006associaccao}{{14}{1}{chapter.1}}
+\backcite {hopp2001global, ribeiro2006associaccao}{{14}{1}{chapter.1}}
 \backcite {MOSCAMED2010LINHAS}{{16}{2.1}{section.2.1}}
 \backcite {MOSCAMEDINST2003, MOSCAMED2010LINHAS}{{16}{2.1}{section.2.1}}
 \backcite {MOSCAMEDINST2003, MOSCAMED2010LINHAS}{{16}{2.1}{section.2.1}}
@@ -62,8 +62,8 @@
 \backcite {raj2012study, palmieri2012comparison, dalmasso2013survey}{{25}{2.5}{section.2.5}}
 \backcite {raj2012study}{{25}{2.5}{section.2.5}}
 \backcite {palmieri2012comparison}{{25}{2.5}{section.2.5}}
-\backcite {raj2012study, dalmasso2013survey}{{26}{2.5}{section.2.5}}
-\backcite {raj2012study, dalmasso2013survey}{{26}{2.5}{section.2.5}}
+\backcite {raj2012study, dalmasso2013survey}{{25}{2.5}{section.2.5}}
+\backcite {raj2012study, dalmasso2013survey}{{25}{2.5}{section.2.5}}
 \backcite {raj2012study}{{26}{2.5}{section.2.5}}
 \backcite {raj2012study}{{26}{2.5}{section.2.5}}
 \backcite {raj2012study}{{26}{2.5}{section.2.5}}
@@ -72,20 +72,31 @@
 \backcite {arcuri2017restful, fielding2000architectural}{{27}{2.6}{section.2.6}}
 \backcite {hsieh2016method}{{27}{2}{table.caption.16}}
 \backcite {torres2001completo}{{27}{2.7}{section.2.7}}
-\backcite {torres2001completo}{{28}{2.7}{section.2.7}}
-\backcite {james2005redes}{{28}{2.7}{section.2.7}}
+\backcite {torres2001completo}{{27}{2.7}{section.2.7}}
+\backcite {james2005redes}{{27}{2.7}{section.2.7}}
 \backcite {james2005redes}{{28}{6}{figure.caption.17}}
-\backcite {SITEIONIC}{{29}{3.1.1}{subsection.3.1.1}}
-\backcite {SITEANGULAR}{{30}{3.1.1}{subsection.3.1.1}}
-\backcite {SITEIONIC}{{30}{3.1.1}{subsection.3.1.1}}
-\backcite {SITEIONIC}{{30}{3.1.1}{subsection.3.1.1}}
-\backcite {raj2012study}{{30}{8}{figure.caption.19}}
-\backcite {tilkov2010node}{{30}{3.1.2}{subsection.3.1.2}}
-\backcite {SITEMONGODB}{{31}{3.1.3}{subsection.3.1.3}}
-\backcite {sommerville2011engenharia}{{32}{4.1}{section.4.1}}
-\backcite {sommerville2011engenharia}{{32}{4.1.1}{subsection.4.1.1}}
-\backcite {SITESEQ}{{37}{4.1.2}{subsection.4.1.2}}
-\backcite {SITEDIAGATIV}{{39}{4.1.3}{subsection.4.1.3}}
-\backcite {SITEMONGODB}{{43}{4.1.6}{subsection.4.1.6}}
-\backcite {SITEVARIAVEIS}{{44}{4.1.6}{figure.caption.27}}
-\backcite {VSPDOC}{{51}{A}{table.anexochapback.1.4}}
+\backcite {royce1970managing}{{29}{3.1}{section.3.1}}
+\backcite {royce1970managing}{{29}{7}{figure.caption.18}}
+\backcite {SITECASCATA1, SITECASCATA2}{{30}{3.1}{figure.caption.18}}
+\backcite {SITECASCATA1, SITECASCATA2}{{30}{3.1}{figure.caption.18}}
+\backcite {SITECASCATA1, SITECASCATA2}{{30}{3.1}{figure.caption.18}}
+\backcite {SITECASCATA1, SITECASCATA2}{{30}{3.1}{figure.caption.18}}
+\backcite {SITEINTERATIVOINCREMENTAL}{{30}{3.1}{figure.caption.18}}
+\backcite {sommerville2011engenharia}{{30}{3.1.1}{subsection.3.1.1}}
+\backcite {sommerville2011engenharia, engsoftwilson}{{30}{3.1.1}{subsection.3.1.1}}
+\backcite {sommerville2011engenharia, engsoftwilson}{{30}{3.1.1}{subsection.3.1.1}}
+\backcite {introrequisitos}{{30}{3.1.1}{subsection.3.1.1}}
+\backcite {SITEIONIC}{{33}{3.2.1}{subsection.3.2.1}}
+\backcite {SITEANGULAR}{{33}{3.2.1}{subsection.3.2.1}}
+\backcite {SITEIONIC}{{33}{3.2.1}{subsection.3.2.1}}
+\backcite {SITEIONIC}{{33}{3.2.1}{subsection.3.2.1}}
+\backcite {raj2012study}{{33}{10}{figure.caption.21}}
+\backcite {tilkov2010node}{{34}{3.2.2}{subsection.3.2.2}}
+\backcite {SITEMONGODB}{{34}{3.2.3}{subsection.3.2.3}}
+\backcite {sommerville2011engenharia}{{35}{4.1}{section.4.1}}
+\backcite {sommerville2011engenharia}{{35}{4.1.1}{subsection.4.1.1}}
+\backcite {SITESEQ}{{40}{4.1.2}{subsection.4.1.2}}
+\backcite {SITEDIAGATIV}{{42}{4.1.3}{subsection.4.1.3}}
+\backcite {SITEMONGODB}{{46}{4.1.6}{subsection.4.1.6}}
+\backcite {SITEVARIAVEIS}{{47}{4.1.6}{figure.caption.29}}
+\backcite {VSPDOC}{{54}{A}{table.anexochapback.1.4}}

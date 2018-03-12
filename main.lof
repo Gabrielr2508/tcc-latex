@@ -5,12 +5,14 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces Depend\IeC {\^e}ncia da temperatura na sobreviv\IeC {\^e}ncia dos est\IeC {\'a}gios de vida do mosquito \textit {Aedes Aegypti}\relax }}{22}{figure.caption.13}
 \contentsline {figure}{\numberline {5}{\ignorespaces A pilha de software do Android\relax }}{23}{figure.caption.14}
 \contentsline {figure}{\numberline {6}{\ignorespaces Processos de aplica\IeC {\c c}\IeC {\~a}o, \textit {sockets} e protocolo de transporte subjacente\relax }}{28}{figure.caption.17}
-\contentsline {figure}{\numberline {7}{\ignorespaces Vis\IeC {\~a}o geral do sistema\relax }}{29}{figure.caption.18}
-\contentsline {figure}{\numberline {8}{\ignorespaces Modelo de aplica\IeC {\c c}\IeC {\~a}o \textit {cross-platform} h\IeC {\'\i }brida\relax }}{30}{figure.caption.19}
-\contentsline {figure}{\numberline {9}{\ignorespaces Diagrama de caso de uso referente ao usu\IeC {\'a}rio final\relax }}{33}{figure.caption.20}
-\contentsline {figure}{\numberline {10}{\ignorespaces Diagrama de caso de uso do ponto de vista da API\relax }}{35}{figure.caption.21}
-\contentsline {figure}{\numberline {11}{\ignorespaces Diagrama de sequ\IeC {\^e}ncia do sistema no contexto de visualiza\IeC {\c c}\IeC {\~a}o dos dados\relax }}{38}{figure.caption.22}
-\contentsline {figure}{\numberline {12}{\ignorespaces Diagrama de sequ\IeC {\^e}ncia do sistema no contexto de obten\IeC {\c c}\IeC {\~a}o de dados\relax }}{39}{figure.caption.23}
-\contentsline {figure}{\numberline {13}{\ignorespaces Diagrama de atividades do sistema\relax }}{40}{figure.caption.24}
-\contentsline {figure}{\numberline {14}{\ignorespaces Telas da aplica\IeC {\c c}\IeC {\~a}o cliente\relax }}{41}{figure.caption.25}
-\contentsline {figure}{\numberline {15}{\ignorespaces Modelo de documento do sistema\relax }}{44}{figure.caption.27}
+\contentsline {figure}{\numberline {7}{\ignorespaces Modelo de Desenvolvimento de \textit {Software} Cascata\relax }}{29}{figure.caption.18}
+\contentsline {figure}{\numberline {8}{\ignorespaces M\IeC {\'o}dulos do sistema\relax }}{32}{figure.caption.19}
+\contentsline {figure}{\numberline {9}{\ignorespaces Vis\IeC {\~a}o geral do sistema\relax }}{32}{figure.caption.20}
+\contentsline {figure}{\numberline {10}{\ignorespaces Modelo de aplica\IeC {\c c}\IeC {\~a}o \textit {cross-platform} h\IeC {\'\i }brida\relax }}{33}{figure.caption.21}
+\contentsline {figure}{\numberline {11}{\ignorespaces Diagrama de caso de uso referente ao usu\IeC {\'a}rio final\relax }}{36}{figure.caption.22}
+\contentsline {figure}{\numberline {12}{\ignorespaces Diagrama de caso de uso do ponto de vista da API\relax }}{38}{figure.caption.23}
+\contentsline {figure}{\numberline {13}{\ignorespaces Diagrama de sequ\IeC {\^e}ncia do sistema no contexto de visualiza\IeC {\c c}\IeC {\~a}o dos dados\relax }}{40}{figure.caption.24}
+\contentsline {figure}{\numberline {14}{\ignorespaces Diagrama de sequ\IeC {\^e}ncia do sistema no contexto de obten\IeC {\c c}\IeC {\~a}o de dados\relax }}{42}{figure.caption.25}
+\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama de atividades do sistema\relax }}{43}{figure.caption.26}
+\contentsline {figure}{\numberline {16}{\ignorespaces Telas da aplica\IeC {\c c}\IeC {\~a}o cliente\relax }}{44}{figure.caption.27}
+\contentsline {figure}{\numberline {17}{\ignorespaces Modelo de documento do sistema\relax }}{47}{figure.caption.29}
