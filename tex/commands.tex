@@ -136,3 +136,54 @@
 \newcommand{\xx} {$\bigotimes$}
 \newcommand{\oo} {$\bigcirc$}
 
+% -- biblioteca para códigos-fonte
+\usepackage[newfloat=true]{minted}
+
+% caixas batutas
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{breakable}
+
+\tcbuselibrary{minted}
+\tcbset{listing engine=minted}
+
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+
+\SetupFloatingEnvironment{listing}{name=Código}
+\SetupFloatingEnvironment{listing}{listname=Lista de códigos}
+
+% @leolleocomp
+% configuração do contador dos códigos-fonte
+% assim como as figuras, começa em 1
+\newcounter{sourcecode}
+
+% @leolleocomp
+% stackoverflow code
+% peguei da resposta abaixo
+% https://stackoverflow.com/questions/24086366/change-latex-minted-listings-numbering-to-include-current-section?answertab=votes#tab-top
+
+\makeatletter
+\renewcommand*{\thelisting}{\thesourcecode}
+\makeatother
+
+% @leolleo
+% WHO DID THIS?
+
+\newcommand{\Ididthis}{
+%	\legend{\textbf{Fonte:} O autor (\the\year).}
+\legend{\textbf{Fonte:} O autor).}
+}
+
+\newcommand{\Otherguydidthis}[1]{
+	\legend{\textbf{Fonte:} \citeonline{#1}.}
+}
+
+\newcommand{\sourcecode}[4]{
+\begin{listing}[H]
+	\refstepcounter{sourcecode}
+	\caption{#1}
+	\label{cmd:#2}
+	\inputminted[linenos, bgcolor=bg, tabsize=4,breaklines]{#3}{codes/#4}
+	\Ididthis
+\end{listing}
+}
+

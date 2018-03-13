@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nx}{cron}\PYG{p}{.}\PYG{n+nx}{schedule}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}*/15 * * * *\PYGZsq{}}\PYG{p}{,} \PYG{k+kd}{function}\PYG{p}{()\PYGZob{}}
+    \PYG{k+kr}{const} \PYG{p}{\PYGZob{}} \PYG{n+nx}{fork} \PYG{p}{\PYGZcb{}} \PYG{o}{=} \PYG{n+nx}{require}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}child\PYGZus{}process\PYGZsq{}}\PYG{p}{);}
+    \PYG{k+kr}{const} \PYG{n+nx}{forked} \PYG{o}{=} \PYG{n+nx}{fork}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}client.js\PYGZsq{}}\PYG{p}{);}
+\PYG{p}{\PYGZcb{});}
+\end{Verbatim}

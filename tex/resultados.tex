@@ -10,7 +10,7 @@ Neste capítulo são apresentados os resultados obtidos com o projeto da arquite
 
 O módulo de captura dos dados têm seu funcionamento ilustrado na figura \ref{img:capturadados}. Como dito anteriormente, periodicamente este módulo obtém informações da estação meteorológica \textit{Vantage Vue™} e os armazena na base de dados por meio do módulo de gerenciamento de dados. Para cumprir sua função, o módulo foi dividido em três \textit{scripts} escritos em \textit{Javascript} e executados em \textit{Node.js}. 
 
-\imagem{0.55}{capturadados}{Módulos de captura e gerenciamento dos dados}{O autor}
+\imagem{0.55}{capturadados}{Módulos de captura e gerenciamento dos dados}{O Autor}
 
 O primeiro \textit{script}, Script Agendador (a), é responsável por executar, a cada intervalo pré-determinado de tempo, uma \textit{thread} composta pelo Script Cliente (b). O Script Driver é um programa que se conecta à estação meteorológica utilizando \textit{socket TCP}, envia um comando de \textit{LOOP} (ver anexo \ref{anex:anexo1}), recebe a resposta do comando contendo os dados e converte as unidades de medida. O Script Cliente possui o papel de criar uma instância do Script Driver (c), e após o recebimento dos dados, salvá-los na base de dados por intermédio de uma requisição HTTP para a API RESTful.
 
@@ -18,9 +18,7 @@ O agendador do Node.js possui a mesma sintaxe do GNU crontab \cite{SITEGNUCRONTA
  
 \centerline{[minutos] [horas] [dias do mês] [mês] [dias da semana]}
 
-Configuração do intervalo de tempo no Script Agendador
-
-%\sourcecode{Configuração do intervalo de execução no Script Agendador}{cron}{shell-session}{cron.js}
+\sourcecode{Configuração do intervalo de execução no Script Agendador}{cron}{javascript}{cron.js}
 
 No exemplo acima o Script Cliente é executado por uma \textit{thread} a cada 15 (quinze) minutos.
 
@@ -48,175 +46,270 @@ As interações entre alguns elementos do sistema serão relatadas pelos diagram
 
 A figura \ref{img:caso_de_uso_1} mostra o caso de uso referente à utilização da aplicação cliente pelo usuário final, enquanto a figura \ref{img:caso_de_uso_2} demonstra as interações do sistema do ponto de vista da API.
 
-\imagem{0.8}{caso_de_uso_1}{Diagrama de caso de uso referente ao usuário final}{O autor}
+\imagem{0.75}{caso_de_uso_1}{Diagrama de caso de uso referente ao usuário final}{O autor}
+%\newpage
+
+\begin{itemize}
+	\item \textbf{Cadastrar usuário}
+
+		\begin{itemize}
+    		\item Atores
+		    	\begin{itemize}
+    		    	\item Usuário
+		    	\end{itemize}
+
+	    	\item Fluxo de eventos primário
+			    \begin{enumerate}
+	    		    \item o usuário deve se cadastrar informando seu nome, \textit{e-mail} e senha;
+	        		\item caso o usuário não seja autenticado, o sistema informa a respeito de credenciais inválidas e encerra o caso de uso;
+		        	\item a API armazena os dados do usuário;
+		    	    \item o usuário é liberado para realizar o \textit{login}.
+			    \end{enumerate}
+
+    		\item Fluxo alternativo
+			    \begin{itemize}
+		    	   \item o usuário desiste de se cadastrar e cancela o caso de uso clicando no botão voltar.
+	    		\end{itemize}
+
+		\end{itemize}
+
+	\item \textbf{Visualizar dados atuais}
+
+		\begin{itemize}
+		    \item Atores
+	    		\begin{itemize}
+		    	    \item Usuário
+			    \end{itemize}
+    
+	    	\item Pré-condições
+			    \begin{itemize}
+		     	   \item o usuário deve estar autenticado
+			    \end{itemize}
+
+	    	\item Fluxo de eventos primário
+			    \begin{enumerate}
+		    	    \item o usuário deve efetuar o \textit{login} informando o \textit{e-mail} e a senha;
+	    		    \item caso o usuário não seja autenticado, o sistema informa a respeito de credenciais inválidas e encerra o caso de uso;
+		    	    \item a API autentica o usuário;
+    			    \item o usuário é liberado para visualizar os dados atuais dos sensores da estação;
+		        	\item após a visualização o usuário pode finalizar o caso de uso ou efetuar uma nova consulta se desejar.
+			    \end{enumerate}
+
+    		\item Fluxo alternativo
+			    \begin{itemize}
+    			   \item o usuário desiste de visualizar os dados atuais e cancela o caso de uso clicando no botão voltar.
+			    \end{itemize}
+
+		\end{itemize}
+
+	\item \textbf{Visualizar histórico}
+
+		\begin{itemize}
+		    \item Atores
+	    		\begin{itemize}
+		    	    \item Usuário
+	    		\end{itemize}
+
+	    	\item Pré-condições
+    			\begin{itemize}
+			        \item o usuário deve estar autenticado
+			    \end{itemize}
+
+		    \item Fluxo de eventos primário
+			    \begin{enumerate}
+			        \item o usuário deve efetuar o \textit{login} informando o \textit{username} e a senha;
+			        \item caso o usuário não seja autenticado, o sistema informa a respeito de credenciais inválidas e encerra o caso de uso;
+			        \item a API autentica o usuário;
+			        \item o usuário é liberado qual período cujo histórico será exibido;
+			        \item o usuário seleciona as variáveis a serem exibidas no gráfico;
+			        \item após a visualização do histórico o usuário pode finalizar o caso de uso se desejar.
+			    \end{enumerate}
+
+		    \item Fluxo alternativo
+			    \begin{enumerate}
+			        \item após a escolha do período de exibição do histórico o usuário pode voltar para a tela anterior e um novo período;
+			        \item o histórico é exibido para o usuário;
+			        \item após a visualização do histórico o usuário pode finalizar o caso de uso ou efetuar uma nova consulta se desejar.
+			    \end{enumerate}
+
+		    \item Fluxo alternativo
+			    \begin{enumerate}
+			        \item o usuário desiste de visualizar o histórico e cancela o caso de uso clicando no botão voltar.
+			    \end{enumerate}
+		\end{itemize}
+\end{itemize}
+
+\imagem{0.65}{caso_de_uso_2}{Diagrama de caso de uso do ponto de vista da API}{O Autor}
 \newpage
 
-\textbf{Visualizar dados atuais}
-
 \begin{itemize}
-    \item Atores
-    \begin{itemize}
-        \item Usuário
-    \end{itemize}
+
+
+	\item \textbf{Salvar dados}
+
+		\begin{itemize}
+		    \item Atores
+			    \begin{itemize}
+			        \item API
+			    \end{itemize}
+
+		    \item Pré-condições
+			    \begin{itemize}
+			        \item o Módulo de captura dos dados realiza uma requisição HTTP solicitando o armazenamento dos dados
+			    \end{itemize}
+
+		    \item Fluxo principal
+			    \begin{enumerate}
+			        \item a API recebe a requisição;
+			        \item a API requisita ao banco de dados a inserção dos dados;
+        			\item a API responde a requisição HTTP informando o \textit{status} da operação (bem sucedida ou não).
+			    \end{enumerate}
     
-    \item Pré-condições
-    \begin{itemize}
-        \item o usuário deve estar autenticado
-    \end{itemize}
-
-    \item Fluxo de eventos primário
-    \begin{enumerate}
-        \item o usuário deve efetuar o \textit{login} informando o \textit{username} e a senha;
-        \item caso o usuário não seja autenticado, o sistema informa a respeito de credenciais inválidas e encerra o caso de uso;
-        \item o usuário é liberado para visualizar os dados atuais dos sensores da estação;
-        \item após a visualização o usuário pode finalizar o caso de uso ou efetuar uma nova consulta se desejar.
-    \end{enumerate}
-
-    \item Fluxo alternativo
-    \begin{itemize}
-       \item o usuário desiste de visualizar os dados atuais e cancela o caso de uso clicando no botão voltar.
-    \end{itemize}
-
-\end{itemize}
-
-\textbf{Visualizar histórico}
-
-\begin{itemize}
-    \item Atores
-    \begin{itemize}
-        \item Usuário
-    \end{itemize}
-
-    \item Pré-condições
-    \begin{itemize}
-        \item o usuário deve estar autenticado
-    \end{itemize}
-
-    \item Fluxo de eventos primário
-    \begin{enumerate}
-        \item o usuário deve efetuar o \textit{login} informando o \textit{username} e a senha;
-        \item caso o usuário não seja autenticado, o sistema informa a respeito de credenciais inválidas e encerra o caso de uso;
-        \item a API autentica o usuário;
-        \item o usuário é liberado para escolher qual(is) variável(is) e qual período cujo histórico será exibido;
-        \item após a visualização do histórico o usuário pode finalizar o caso de uso se desejar.
-    \end{enumerate}
-
-    \item Fluxo alternativo
-    \begin{enumerate}
-        \item após a escolha da(s) variável(is) ou do período de exibição do histórico o usuário pode voltar para a tela anterior e escolher novas variáveis ou um novo período;
-        \item o histórico é exibido para o usuário;
-        \item após a visualização do histórico o usuário pode finalizar o caso de uso ou efetuar uma nova consulta se desejar.
-    \end{enumerate}
-
-    \item Fluxo alternativo
-    \begin{enumerate}
-        \item o usuário desiste de visualizar o histórico e cancela o caso de uso clicando no botão voltar.
-    \end{enumerate}
-\end{itemize}
-
-\imagem{0.8}{caso_de_uso_2}{Diagrama de caso de uso do ponto de vista da API}{O Autor}
-
-\textbf{Coletar dados}
-
-\begin{itemize}
-    \item Atores
-    \begin{itemize}
-        \item API
-    \end{itemize}
-
-    \item Pré-condições
-    \begin{itemize}
-        \item conectar-se ao \textit{datalogger}
-    \end{itemize}
-
-    \item Fluxo principal
-    \begin{enumerate}
-        \item a API conecta-se ao \textit{datalogger} e envia comandos seriais (ver Anexo \ref{anex:anexo1}) via \textit{socket} TCP requisitando os dados;
-        \item após a resposta do \textit{datalogger}, os dados são tratados;
-        \item a API armazena as informações no banco de dados e encerra o caso de uso.
-    \end{enumerate}
-    
-    \item Fluxo alternativo
-    \begin{enumerate}
-        \item a API não consegue se conectar ao \textit{datalogger}, o caso de uso é cancelado.
-    \end{enumerate}
+		    \item Fluxo alternativo
+			    \begin{enumerate}
+			        \item a API não consegue se conectar ao banco de dados, o caso de uso é cancelado.
+			    \end{enumerate}
 	
-	\item Fluxo alternativo
-    \begin{enumerate}
-        \item a API conecta-se ao \textit{datalogger} e requisita os dados;
-        \item a API verifica que os dados do banco já são os mais recentes;
-        \item o caso de uso é cancelado.
-    \end{enumerate}
+		    \item Pós-condições
+			    \begin{itemize}
+			       \item novas informações estão disponíveis no banco de dados para serem consultadas.
+			    \end{itemize}
+		\end{itemize}
+		
+		
+	\item \textbf{Cadastrar usuário}
 
-    \item Pós-condições
-    \begin{itemize}
-       \item novas informações estão disponíveis no banco de dados para serem consultadas.
-    \end{itemize}
-\end{itemize}
+		\begin{itemize}
+		    \item Atores
+			    \begin{itemize}
+			        \item API
+			    \end{itemize}
 
-\textbf{Servir dados}
+		    \item Pré-condições
+			    \begin{itemize}
+			        \item a aplicação de usuário realiza uma requisição HTTP solicitando o armazenamento dos dados
+			    \end{itemize}
 
-\begin{itemize}
-    \item Atores
-    \begin{itemize}
-        \item API
-    \end{itemize}
-
-    \item Pré-condições
-    \begin{itemize}
-        \item verificar quais as variáveis requeridas pela aplicação cliente através dos parâmetros da requisição HTTP.
-    \end{itemize}
-
-    \item Fluxo principal
-    \begin{enumerate}
-        \item a API verifica quais dados foram solicitados pelo cliente;
-        \item recupera as informações necessárias no banco de dados;
-        \item a API envia os dados para a aplicação e encerra o caso de uso.
-    \end{enumerate}
-
-	\item Fluxo alternativo
-    \begin{enumerate}
-        \item a API verifica quais dados foram solicitados pelo cliente;
-        \item a API não consegue se conectar ao banco de dados, então o caso de uso é encerrado.
-    \end{enumerate}
+		    \item Fluxo principal
+			    \begin{enumerate}
+			        \item a API recebe a requisição;
+			        \item a API requisita ao banco de dados a inserção dos dados do usuário;
+			        \item o banco de dados verifica a existência de algum registro contendo o mesmo \textit{e-mail}; 
+        			\item a API responde a requisição HTTP informando o \textit{status} da operação (bem sucedida ou não).
+			    \end{enumerate}
     
-    \item Pós-condições
-    \begin{itemize}
-        \item o usuário pode visualizar as informações consultadas.
-    \end{itemize}
-\end{itemize}
+		    \item Fluxo alternativo
+			    \begin{enumerate}
+			        \item a API não consegue se conectar ao banco de dados, o caso de uso é cancelado.
+			    \end{enumerate}
+	
+		    \item Pós-condições
+			    \begin{itemize}
+			       \item o usuário está apto a realizar seu \textit{login}.
+			    \end{itemize}
+		\end{itemize}
 
-\textbf{Autenticar usuário}
+	\item \textbf{Autenticar usuário}
 
-\begin{itemize}
-    \item Atores
-    \begin{itemize}
-        \item API
-    \end{itemize}
+		\begin{itemize}
+   			 \item Atores
+			    \begin{itemize}
+			        \item API
+			    \end{itemize}
 
-    \item Pré-condições
-    \begin{itemize}
-        \item recuperar as credenciais de \textit{login} do usuário na requisição da aplicação cliente.
-    \end{itemize}
+		    \item Pré-condições
+			    \begin{itemize}
+			        \item a aplicação de usuário realiza uma requisição HTTP solicitando a checagem das credenciais do usuário
+			    \end{itemize}
 
-    \item Fluxo principal
-    \begin{enumerate}
-        \item a API conecta-se ao banco de dados;
-        \item a API verifica que as credenciais do usuário são válidas;
-        \item a API responde à requisição de \textit{login} enviando o \textit{token} de acesso do cliente.
-    \end{enumerate}
+		    \item Fluxo principal
+			    \begin{enumerate}
+			    	\item a API recebe a requisição;
+			        \item a API requisita ao banco de dados a verificação dos dados;			
+			        \item a API responde à requisição de \textit{login} enviando o \textit{token} de acesso do cliente.			     
+			    \end{enumerate}
 
-	\item Fluxo alternativo
-    \begin{enumerate}
-        \item a API não consegue se conectar ao banco de dados, então o caso de uso é encerrado.
-    \end{enumerate}
+			\item Fluxo alternativo
+			    \begin{enumerate}
+			        \item a API não consegue se conectar ao banco de dados, então o caso de uso é encerrado.
+			    \end{enumerate}
     
-    \item Fluxo alternativo
-    \begin{enumerate}
-        \item a API conecta-se ao banco de dados;
-        \item a API verifica que as credenciais do usuário são inválidas;
-        \item a API responde à requisição informando erro.
-    \end{enumerate}
+		    \item Fluxo alternativo
+			    \begin{enumerate}
+			        \item a API conecta-se ao banco de dados;
+	        		\item a o banco de dados verifica que as credenciais do usuário são inválidas;
+			        \item a API responde à requisição informando erro.
+			    \end{enumerate}
+		\end{itemize}
+		
+	\item \textbf{Servir dados entre datas}
+
+		\begin{itemize}
+    		\item Atores
+			    \begin{itemize}
+    	    		\item API
+			    \end{itemize}
+
+		    \item Pré-condições
+			    \begin{itemize}
+     		   		\item verificar qual o período dos dados requeridos pela aplicação cliente através dos parâmetros da requisição HTTP
+			    \end{itemize}
+
+			\item Fluxo principal
+   	 			\begin{enumerate}
+		     	   \item a API recebe a requisição;
+			        \item a API requisita ao banco de dados os dados que foram obtidos no intervalo entre as datas;
+		    	    \item a API envia os dados para a aplicação e encerra o caso de uso.
+		   		 \end{enumerate}
+
+			\item Fluxo alternativo
+		    	\begin{enumerate}
+			        \item a API não consegue se conectar ao banco de dados, então o caso de uso é encerrado.
+		    	\end{enumerate}
+    		
+    		\item Fluxo alternativo
+		    	\begin{enumerate}
+			        \item não há dados referente ao período solicitado;
+			        \item a API responde à requisição com um conjunto de dados vazio;
+			        \item o caso de uso é encerrado.
+		    	\end{enumerate}
+		    	
+		    \item Pós-condições
+			    \begin{itemize}
+        			\item o usuário pode visualizar as informações consultadas.
+		    	\end{itemize}
+		\end{itemize}
+		
+	\item \textbf{Servir o último registro}
+
+		\begin{itemize}
+    		\item Atores
+			    \begin{itemize}
+    	    		\item API
+			    \end{itemize}
+
+		    \item Pré-condições
+			    \begin{itemize}
+     		   		\item a aplicação de usuário realiza uma requisição HTTP solicitando os dados mais atuais
+			    \end{itemize}
+
+			\item Fluxo principal
+   	 			\begin{enumerate}
+		     	   \item a API recebe a requisição;
+			        \item a API requisita ao banco de dados o registro mais recente;
+		    	    \item a API envia os dados para a aplicação e encerra o caso de uso.
+		   		 \end{enumerate}
+
+			\item Fluxo alternativo
+		    	\begin{enumerate}
+			        \item a API não consegue se conectar ao banco de dados, então o caso de uso é encerrado.
+		    	\end{enumerate}
+    				    	
+		    \item Pós-condições
+			    \begin{itemize}
+        			\item o usuário pode visualizar as informações consultadas.
+		    	\end{itemize}
+		\end{itemize}
 \end{itemize}
 
 
