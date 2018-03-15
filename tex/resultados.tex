@@ -315,28 +315,41 @@ A figura \ref{img:caso_de_uso_1} mostra o caso de uso referente à utilização 
 
 \subsection{Diagrama de sequência} \label{subsec:diagSeq}
 
-O diagrama de sequência apresenta a colaboração dinâmica entre as entidades do projeto. Diante dele é possível verificar as mensagens trocadas entre os objetos no decorrer do tempo \cite{SITESEQ}. A sequência de interações entre as entidades componentes do sistema no que tange a consulta de dados estão representadas pelo diagrama de sequência da figura \ref{img:sequencia2}, onde a aplicação cliente solicita os dados climáticos para a API. O diagrama de sequência deve ser lido de cima para baixo.
+O diagrama de sequência apresenta a colaboração dinâmica entre as entidades do projeto. Diante dele é possível verificar as mensagens trocadas entre os objetos no decorrer do tempo \cite{SITESEQ}. A sequência de interações entre as entidades componentes do sistema no que tange a consulta de dados do histórico estão representadas pelo diagrama de sequência da figura \ref{img:sequencia2}.
+
+\newpage
 
 \imagem{0.63}{sequencia2}{Diagrama de sequência do sistema no contexto de visualização dos dados}{O Autor}
 
-\newpage
 
 \begin{enumerate}
-        \item A aplicação solicita à API através de uma requisição HTTP e seus parâmetros os dados referentes às variáveis selecionadas pelo usuário;
-        \item A API recebe a solicitação e se comunica com a base de dados, então requere as informações e recebe os dados;
-        \item A API retorna os dados para a aplicação cliente por meio de um arquivo JSON.
+	\item O Usuário deseja ver o histórico das variáveis climáticas, então através da interface de usuário escolhe o período ao qual o histórico se refere;
+	\item A aplicação solicita à API através de uma requisição HTTP contendo o momento de início e o momento do fim do período em seus parâmetros;     			\item A API recebe a solicitação e se comunica com a base de dados, então requere as informações quem possuem a data de leitura no intervalo escolhido;
+	\item A base de dados retorna os dados em formato Json para a API;
+	\item A API responde à requisição retornando os dados, também em formato Json, para a aplicação cliente;
+	\item A aplicação cliente renderiza os gráficos utilizando o conjunto de dados obtidos.
 \end{enumerate}
+
+O diagrama de sequência para o caso de uso de visualização dos dados atuais possui a lógica de funcionamento idêntica ao diagrama da figura \ref{img:sequencia2}, diferenciando-se nos fatos de que o usuário não necessita preencher nenhum formulário, os métodos executados pela aplicação cliente e pela API são diferentes, e a aplicação não gera gráficos para este cenário, como pode ser observado na figura \ref{img:dados_atuais}. Os respectivos métodos utilizados pela aplicação cliente e pela API neste caso são mostrados abaixo.
+
+\sourcecode{Método executado para a requisição dos dados atuais pela aplicação cliente}{metodo1}{javascript}{metodo1.js}
+
+\sourcecode{Método executado pela API para a busca dos dados atuais}{metodo2}{javascript}{metodo2.js}
 
 A figura \ref{img:sequencia3} demonstra o caso de obtenção dos dados da estação por parte do sistema, onde a API recupera dos dados provenientes da estação e os insere no banco de dados para futuras consultas.
 
-\newpage
+
 \imagem{0.55}{sequencia3}{Diagrama de sequência do sistema no contexto de obtenção de dados}{O Autor}
 
 \begin{enumerate}
-        \item A API abre um \textit{socket TCP} com o \textit{datalogger} conectado ao console da estação, então envia comandos seriais solicitando as informações para o \textit{datalogger};
-        \item O \textit{datalogger} responde à API retornando os dados também via serial;
-        \item Em posse do dados a API se comunica com a base de dados, então envia as novas informações à serem salvas;
-        \item A base de dados confirma a adição de novos registros.
+	\item O Script Cliente inicia uma nova instância do Script Driver;
+	\item O Script Driver envia através de uma conexão TCP o comando de LOOP para o \textit{datalogger} da estação;
+	\item O \textit{datalogger} responde ao comando de LOOP retornando um pacote de 99 \textit{bytes} contendo os dados da última leitura da estação;
+	\item O Script Driver retorna para o Script Client um Json contendo os dados convertidos para as unidades mais usuais;
+	\item O Script Cliente envia para a API, através de uma requisição HTTP, os dados coletados;
+	\item A API solicita à base de dados a inserção das informações;
+	\item A base de dados confirma a inserção das informações para a API;
+	\item A API confirma para o Script Cliente o sucesso da operação.
 \end{enumerate}
 
 \subsection{Diagrama de atividades} \label{subsec:diagAtiv}
@@ -349,55 +362,47 @@ Os diagramas de atividade são semelhantes a fluxogramas, porque englobam a dire
 
 \subsection{Interface com o usuário} \label{subsec:interfaceComOUsurario}
 
-A aplicação cliente ou interface de usuário conterá cinco telas, sendo: tela de \textit{login}, tela de dados atuais, tela de seleção de variáveis, tela de seleção de período e tela de histórico (ver figura \ref{img:telas}). A tela inicial a ser exibida assim que o usuário é autenticado é a tela de dados atuais, a partir de então o usuário possui a liberdade de permanecer na mesma, consultar o histórico informando os dados necessários para tal ou efetuar o \textit{logoff}.
+A aplicação cliente ou interface de usuário contém sete telas, sendo: tela de início, tela de \textit{login}, tela de cadastro, tela de dados atuais, tela de seleção de período, tela de histórico e tela de sobre  (ver figura \ref{img:telas}). A tela inicial a ser exibida assim que o usuário é autenticado é a tela de dados atuais, a partir de então o usuário possui a liberdade de permanecer na mesma, consultar o histórico informando os dados necessários para tal ou efetuar o \textit{logoff}.
 
 \begin{figure}[!htb]
 \centering
     \caption{\label{img:telas} Telas da aplicação cliente}
-    \subcaptionbox{\label{img:login} \textit{Login} de usuário}{\includegraphics[scale=.55]{img/APP/login}}\qquad
-    \subcaptionbox{\label{img:dados_atuais}Dados atuais}{\includegraphics[scale=.55]{img/APP/dados_atuais}}\\
-    \subcaptionbox{\label{img:hist-var}Escolher variáveis}{\includegraphics[scale=.55]{img/APP/hist-var}}\qquad
-    \subcaptionbox{\label{img:hist-time}Seleção de período}{\includegraphics[scale=.55]{img/APP/hist-time}}\qquad
-    \subcaptionbox{\label{img:hist-rel}Exibir histórico}{\includegraphics[scale=.55]{img/APP/hist-rel}}
+    \subcaptionbox{\label{img:inicial} Abertura}{\includegraphics[scale=.12]{img/APP/inicial}}\qquad
+    \subcaptionbox{\label{img:login} \textit{Login}}{\includegraphics[scale=.12]{img/APP/login}}\qquad
+    \subcaptionbox{\label{img:hist-rel}Sobre}{\includegraphics[scale=.12]{img/APP/sobre}}\qquad
+    \subcaptionbox{\label{img:cadastro} Cadastro}{\includegraphics[scale=.12]{img/APP/cadastro}}\\
+    \subcaptionbox{\label{img:dados_atuais}Dados atuais}{\includegraphics[scale=.15]{img/APP/atual}}\qquad
+    \subcaptionbox{\label{img:hist-time}Seleção de período}{\includegraphics[scale=.15]{img/APP/periodo}}\quad
+    \subcaptionbox{\label{img:hist-rel}Exibir histórico}{\includegraphics[scale=.15]{img/APP/historico}}
     \legend{\textbf{Fonte:} O Autor}
 \label{fig:dag}
 \end{figure}
 
-Além disso, será sempre permitido ao usuário retornar para a tela anterior através do botão voltar, com exceção da tela de \textit{login}, que só será acessível se o usuário realizar \textit{logoff} ou reiniciar a aplicação. O fluxo de funcionamento da aplicação cliente é representado pelo diagrama de atividades da figura \ref{img:atividades1} na subseção \ref{subsec:diagAtiv}.
 
-A figura \ref{img:login} mostra a tela utilizada no caso de uso de autenticação do usuário. A figura \ref{img:dados_atuais} mostra a tela de visualização dos dados atuais. As figuras \ref{img:hist-var}, \ref{img:hist-time} e \ref{img:hist-rel} correspondem ao caso de uso de visualização de histórico.
+Além disso, será sempre permitido ao usuário retornar para a tela anterior através do botão voltar, com exceção das telas de \textit{login} e cadastro, que só serão acessíveis se o usuário realizar \textit{logoff} ou reinstalar a aplicação. O fluxo de funcionamento da aplicação cliente é representado pelo diagrama de atividades da figura \ref{img:atividades1} na subseção \ref{subsec:diagAtiv}.
 
-É importante salientar que as telas aqui representadas são um protótipo, e durante a implementação do projeto podem sofrer alterações de \textit{design} e funcionalidades. Entretanto, já apresentam a ideia central de como será a aplicação.
+A figura \ref{img:login} mostra a tela utilizada no caso de uso de autenticação do usuário. A figura \ref{img:dados_atuais} mostra a tela de visualização dos dados atuais. As figuras, \ref{img:hist-time} e \ref{img:hist-rel} correspondem ao caso de uso de visualização de histórico.
 
 \subsection{A API do sistema} \label{subsec:api}
 
-Os URIs da API do sistema estão mostrados na tabela \ref{tab:api} abaixo. Assim como na subseção \ref{subsec:interfaceComOUsurario}, os identificadores aqui planejados são um protótipo e a medida que a implementação do sistema progride pode surgir a necessidade de alterá-los tanto sintaticamente quanto semânticamente. Assim como pode nascer a necessidade de adicionar novos identificadores ou de excluir algum dos planejados previamente.
-
-A tabela divide-se em três partes, a primeira representa as ações que podem ser executadas por um usuário não autenticado, a segunda evidencia as ações possíveis para um usuário que efetuou \textit{login} e a terceira expõe as ações internas do sistema.
+Os URIs da API do sistema estão mostrados na tabela \ref{tab:api} abaixo. A tabela divide-se em três partes, a primeira representa as ações que podem ser executadas por um usuário não autenticado, a segunda evidencia as ações possíveis para um usuário que efetuou \textit{login} e a terceira expõe as ações internas do sistema.
 
 %\definecolor{Gray}{gray}{0.85}
-\newpage
+%\newpage
 
 \begin{table}[!h]
 \huge
 \centering
 \caption{\label{tab:api} API RESTful do sistema.}
 \begin{adjustbox}{max width=\textwidth}
-\begin{tabular}{@{} p{8.5cm} | l l p{10cm} @{}}
-\toprule
-%\rowcolor{Gray}
-\multicolumn{1}{l}{Ator}                                 & Método & URI                                & Descrição                                                                                   \\ \hline
-Usuário não autenticado              & POST   & /usuario/login                     & Autentica o usuário                                                                        ; \\ \hline
-\multirow{5}{*}{Usuário autenticado} & GET    & /atual                             & Retorna o último documento da base de dados;                                                 \\ \cline{2-4}
-                                     & GET    & /hist/\{id\_variavel\}/\{periodo\} & Retorna o histórico da variável no período especificado;                                     \\ \cline{2-4}
-                                     & POST   & /usuario/novo                      & Cria um novo usuário com os parâmetros passados no corpo da requisição;                      \\ \cline{2-4}
-                                     & PUT    & /usuario/\{username\}              & Atualiza os dados do usuário especificado com os parâmetros passados no corpo da requisição; \\ \cline{2-4}
-                                     & DELETE & /usuario/\{username\}              & Deleta o usuário especificado;                                                               \\ \hline
-\multirow{3}{*}{Sistema}             & POST   & /leitura                           & Cria um novo documento no banco os valores das variáveis passados no corpo da requisição;    \\ \cline{2-4}
-                                     & DELETE & /leitura/\{id\}                    & Deleta a especificada leitura da base de dados;                                              \\ \cline{2-4}
-                                     & PUT    & /leitura/\{id\}                    & Atualiza os dados da leitura especificada com os parâmetros passados no corpo da requisição; \\ %\cmidrule(l){2-4}
-\bottomrule
-                                      
+\begin{tabular}{@{} p{8.5cm} l l p{10cm} @{}}
+\hline
+\multicolumn{1}{c}{\textbf{Ator}}                             & \multicolumn{1}{c}{\textbf{Método}} & \multicolumn{1}{c}{\textbf{URI}}                 & \multicolumn{1}{c}{\textbf{Descrição}}                                                    \\ \hline
+\multicolumn{1}{l|}{\multirow{2}{*}{Usuário não autenticado}} & POST                                & \multicolumn{1}{l|}{/auth/login}                 & Autentica o usuário utilizando os parâmetros passados no corpo da requisição;                                                                      \\ \cline{2-4} 
+\multicolumn{1}{l|}{}                                         & POST                                & \multicolumn{1}{l|}{/auth/register}              & Cria um novo usuário com os parâmetros passados no corpo da requisição;                   \\ \hline
+\multicolumn{1}{l|}{\multirow{2}{*}{Usuário autenticado}}     & GET                                 & \multicolumn{1}{l|}{/read/last}                  & Retorna o último documento da base de dados;                                              \\ \cline{2-4} 
+\multicolumn{1}{l|}{}                                         & GET                                 & \multicolumn{1}{l|}{/read/:readMoment1/:readMoment2} & Retorna os dados contidos período especificado pelos parâmetros da requisição;                                           \\ \hline
+\multicolumn{1}{l|}{Sistema}                                  & POST                                & \multicolumn{1}{l|}{/read}                       & Cria um novo documento no banco com os valores das variáveis passados no corpo da requisição; \\ \hline                          
 \end{tabular}
 \end{adjustbox}
 \legend{\textbf{Fonte:} O Autor}

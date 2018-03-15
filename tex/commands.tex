@@ -39,6 +39,8 @@
 \usepackage{xcolor,colortbl}
 \usepackage{longtable}
 \usepackage{scalefnt}
+
+
 % [leolleo] meus comandos (peguei do tex exchange)
 
 \usepackage{tocloft}
@@ -148,8 +150,8 @@
 
 \definecolor{bg}{rgb}{0.95,0.95,0.95}
 
-\SetupFloatingEnvironment{listing}{name=Código}
-\SetupFloatingEnvironment{listing}{listname=Lista de códigos}
+\SetupFloatingEnvironment{listing}{name=Código, listname=Lista de códigos}
+%\SetupFloatingEnvironment{listing}{listname=Lista de códigos}
 
 % @leolleocomp
 % configuração do contador dos códigos-fonte
@@ -170,7 +172,7 @@
 
 \newcommand{\Ididthis}{
 %	\legend{\textbf{Fonte:} O autor (\the\year).}
-\legend{\textbf{Fonte:} O autor).}
+\legend{\textbf{Fonte:} O autor}
 }
 
 \newcommand{\Otherguydidthis}[1]{
