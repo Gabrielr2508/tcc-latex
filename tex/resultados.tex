@@ -369,11 +369,13 @@ A aplicação cliente ou interface de usuário contém sete telas, sendo: tela d
     \caption{\label{img:telas} Telas da aplicação cliente}
     \subcaptionbox{\label{img:inicial} Abertura}{\includegraphics[scale=.12]{img/APP/inicial}}\qquad
     \subcaptionbox{\label{img:login} \textit{Login}}{\includegraphics[scale=.12]{img/APP/login}}\qquad
-    \subcaptionbox{\label{img:hist-rel}Sobre}{\includegraphics[scale=.12]{img/APP/sobre}}\qquad
-    \subcaptionbox{\label{img:cadastro} Cadastro}{\includegraphics[scale=.12]{img/APP/cadastro}}\\
+    \subcaptionbox{\label{img:cadastro} Cadastro}{\includegraphics[scale=.12]{img/APP/cadastro}}\qquad
+    \subcaptionbox{\label{img:hist-rel}Sobre}{\includegraphics[scale=.12]{img/APP/sobre}}\\
+    \vspace{1.5em}
     \subcaptionbox{\label{img:dados_atuais}Dados atuais}{\includegraphics[scale=.15]{img/APP/atual}}\qquad
-    \subcaptionbox{\label{img:hist-time}Seleção de período}{\includegraphics[scale=.15]{img/APP/periodo}}\quad
-    \subcaptionbox{\label{img:hist-rel}Exibir histórico}{\includegraphics[scale=.15]{img/APP/historico}}
+    \subcaptionbox{\label{img:hist-time}Seleção de período}{\includegraphics[scale=.15]{img/APP/periodo}}\qquad
+    \subcaptionbox{\label{img:hist-rel}Exibir histórico}{\includegraphics[scale=.15]{img/APP/historico}}\\
+    \vspace{2.5em}
     \legend{\textbf{Fonte:} O Autor}
 \label{fig:dag}
 \end{figure}
@@ -409,14 +411,17 @@ Os URIs da API do sistema estão mostrados na tabela \ref{tab:api} abaixo. A tab
 \end{table}
 
 
+\subsection{Modelos de dados do sistema} \label{subsec:datamodel}
+
+O banco de dados escolhido para a implementação do projeto é não-relacional baseado em documentos. Os documentos podem conter vários pares chave-valor, ou vários pares chave-vetor, ou até vários documentos encadeados. A estrutura do documento é flexível, o que permite alterações e inserções futuras de dados novos em uma base preexistente \cite{SITEMONGODB}. Um dos modelos de dados adotado para o projeto é mostrado na figura \ref{img:collection} abaixo, onde de um lado têm-se as chaves representando os dados fornecidos pela estação e do outro seus respectivos valores.
+
+Os valores de cada chave adotada para o modelo de documentos são providos pelo \textit{datalogger} da estação. As chaves possuem o valor obtido diretamente dos sensores.
 
 
-
-\subsection{Modelo de dados do sistema} \label{subsec:datamodel}
-
-O banco de dados escolhido para a implementação do projeto é não-relacional baseado em documentos. Os documentos podem conter vários pares chave-valor, ou vários pares chave-vetor, ou até vários documentos encadeados. A estrutura do documento é flexível, o que permite alterações e inserções futuras de dados novos em uma base preexistente \cite{SITEMONGODB}. O modelo de dados inicial adotado para o projeto é mostrado na figura \ref{img:collection} abaixo, onde de um lado têm-se as chaves representando os dados fornecidos pela estação e do outro seus respectivos valores.
-
-\imagem{0.55}{collection}{Modelo de documento do sistema}{O Autor}
 \newpage
+\imagem{0.55}{collection}{Modelo de documento das leituras do sistema}{O Autor}
 
-Os valores de cada chave adotada para o modelo de documentos são providos pelo \textit{datalogger} da estação. Algumas chaves possuem o valor obtido diretamente dos sensores, por exemplo a direção do vento. Em outros casos, os valores são calculados pela própria estação através de equações utilizando os dados derivados dos sensores, como por exemplo o ponto de orvalho, que faz uso da temperatura e da umidade externa em seu cálculo \cite{SITEVARIAVEIS}.
+
+O outro modelo de dados do sistema é referente aos dados de usuário, como indicados na figura \ref{img:collection2}. Os valores desses dados são preenchidos no momento do cadastro do usuário. Neste momento o sistema criptografa a senha enviada, por meio do algortimo \textit{bcrypt}, e salva somente a criptografia no banco. 
+
+\imagem{0.55}{collection2}{Modelo de documento dos usuários do sistema}{O Autor}

@@ -218,6 +218,11 @@
 \cleardoublepage
 
 % ---
+%ajustar lista de códigos - alterar de figures para códigos
+\makeatletter
+\let\l@listing\l@figure
+\def\newfloat@listoflisting@hook{\let\figurename\listingname}
+\makeatother
 
 % ---
 % inserir lista de códigos
