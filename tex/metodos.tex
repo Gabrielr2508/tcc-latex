@@ -1,6 +1,6 @@
 \chapter{Materiais e Métodos} \label{ch:MM}
 
-Este capítulo tem como finalidade descrever o projeto de \textit{software} através da metodologia utilizada, de maneira a elucidar as várias facetas e componentes do sistema como um todo. O capítulo está dividido nas seguintes partes: Projeto de software e Tecnologias utilizadas.
+Este capítulo tem como finalidade descrever o projeto do sistema através da metodologia utilizada, de maneira a elucidar as várias facetas e componentes do sistema como um todo. O capítulo está dividido nas seguintes partes: Projeto de software e Tecnologias utilizadas.
 
 \section{Projeto de Software} 
 
@@ -26,7 +26,7 @@ Os requisitos de um sistema nada mais são do que um conjunto de descrições à
 
 Os requisitos ou características funcionais explicitam os serviços que o sistema deve oferecer, como ele deve reagir mediante determinadas entradas e qual seu comportamento em situações especificas \cite{sommerville2011engenharia, engsoftwilson}.
 
-As características não funcionais são restrições aos serviços ou funcionalidades fornecidas pelo sistema. Ou seja, os requisitos não funcionais qualificam o requisitos funcionais. A qualificação pode ser referente ao \textit{software}, como a performance, usabilidade, confiabilidade, tolerância à falha, dentre outros. Ou pode ser referente ao processo de desenvolvimento, como tempos de entrega, método de desenvolvimento, e assim por diante \cite{introrequisitos}.
+As características não funcionais são restrições aos serviços ou funcionalidades fornecidas pelo sistema. Ou seja, os requisitos não funcionais qualificam os requisitos funcionais. A qualificação pode ser referente ao \textit{software}, como a performance, usabilidade, confiabilidade, tolerância à falha, dentre outros. Ou pode ser referente ao processo de desenvolvimento, como tempos de entrega, método de desenvolvimento, e assim por diante \cite{introrequisitos}.
 
 A seguir são listados os requisitos elencados para este projeto.
 
@@ -34,27 +34,27 @@ A seguir são listados os requisitos elencados para este projeto.
 \subsubsection{Requisitos funcionais}
 
 \begin{itemize}
-    \item O sistema deve permitir o cadastro de novos usuários através da interface.
+    \item O sistema deve permitir o cadastro de novos usuários através da interface;
     
-    \item O sistema deve permitir o \textit{login} dos usuários através da interface.
+    \item O sistema deve permitir o \textit{login} dos usuários através da interface;
 
-    \item O sistema deve permitir ao usuário visualizar as informações mais recentes sobre o clima.
+    \item O sistema deve permitir ao usuário visualizar as informações mais recentes sobre o clima;
 
-    \item O sistema deve permitir ao usuário visualizar o histórico das variáveis climáticas mediante escolha do período a qual se refere.
+    \item O sistema deve permitir ao usuário visualizar o histórico das variáveis climáticas mediante escolha do período a qual se refere;
 
-	\item O histórico deve ser exibido na forma de gráficos, permitindo a seleção das variáveis mostradas.
+	\item O histórico deve ser exibido na forma de gráficos, permitindo a seleção das variáveis mostradas;
 	
-	\item O sistema deve coletar os dados da estação meteorológica periodicamente e salvá-los na base de dados. 
+	\item O sistema deve coletar os dados da estação meteorológica periodicamente e salvá-los na base de dados.
 \end{itemize}
 
 \subsubsection{Requisitos não funcionais}
 
 \begin{itemize}
-    \item O sistema deve ser de natureza multiplataforma, permitindo a consulta de dados tanto através da \textit{Web} quanto através de aplicativo \textit{Android}.
+    \item O sistema deve ser de natureza multiplataforma, permitindo a consulta de dados tanto através da \textit{Web} quanto através de aplicativo \textit{Android};
     
-    \item O sistema deve permitir a consulta de dados via \textit{internet} a qualquer momento, desde que haja conexão.
+    \item O sistema deve permitir a consulta de dados via \textit{internet} a qualquer momento, desde que haja conexão;
 
-    \item Todas as consultas do sistema só podem ser efetuadas por usuários autenticados.
+    \item Todas as consultas do sistema só podem ser efetuadas por usuários autenticados;
 
     \item O sistema deve possuir uma interface com boa experiência de usuário.
 
@@ -70,7 +70,7 @@ Inicialmente buscou-se compreender a arquitetura do sistema como um todo, levand
 
 Para satisfazer a necessidade de operação da arquitetura da estação \textit{Vantage Vue™}, aderiu-se o \textit{socket TCP} como forma de captura dos dados pelo módulo responsável. Como o objetivo geral do projeto especifica que o sistema deve operar via \textit{internet}, o módulo de gerenciamento de dados foi projetado como uma API RESTful. O fato de ser adotada uma API para o sistema, resolve o problema de intercomunicação entre os módulos e a base de dados, pois atua como uma camada de abstração que gerencia toda a comunicação. Desta forma, o módulo de captura dos dados e o módulo de exibição podem se comunicar com o módulo de gerenciamento através de requisições HTTP, explanadas na subseção \ref{subsec:api}.
 
-Além do mais, ambos os módulos de captura e de gerenciamento dos dados foram implementados utilizando a linguagem \textit{Javascript} no ambiente de execução \textit{Node.js}.
+Além do mais, ambos os módulos de captura e de gerenciamento dos dados foram implementados utilizando a linguagem \textit{Javascript} e foram executadas no ambiente de execução \textit{Node.js}.
  
 Ainda para satisfazer o objetivo geral do sistema, onde é previsto a visualização das informações por meio de uma aplicação \textit{Web} e também por meio de um aplicativo \textit{Android}, adotou-se o \textit{framework Ionic} para o desenvolvimento da interface de usuário.
 
@@ -80,7 +80,7 @@ A figura \ref{img:visaogeral}  demonstra o panorama geral do projeto e o context
 
 \newpage
 
-A suíte de sensores da estação meteorológica (a) transmite as informações captadas por ondas de rádio para o seu console (b) que as exibe localmente em sua tela. A API (d) requisita para o \textit{datalogger} as informações contidas no console. O \textit{datalogger} (c) captura essas informações e responde a requisição. A API então processa as informações colhidas, salva os dados no banco e disponibiliza-os através da \textit{internet} (e) para a aplicação cliente (f).
+A suíte de sensores da estação meteorológica (a) transmite as informações captadas por ondas de rádio para o seu console (b) que as exibe localmente em sua tela. O servidor de obtenção dos dados (d) requisita para o \textit{datalogger} as informações contidas no console. O \textit{datalogger} (c) captura essas informações e responde a requisição. O servidor de obtenção dos dados envia para o servidor de aplicação (e) as informações. A API então processa as informações colhidas, salva os dados no banco (f) e disponibiliza-os através da \textit{internet} (g) para a aplicação cliente (f).
 
 
 
@@ -102,16 +102,16 @@ A escolha desse \textit{framework} deve-se ao fato dele ser completamente gratui
 
 \subsection{Node.js} \label{subsec:NodeJs}
 
-O \text{Node.js} é um ambiente de tempo de execução JavaScript assíncrono baseado em eventos, construído sobre o motor JavaScript V8 da Google rodando do lado do servidor. Surgiu com o propósito de possibilitar a criação de aplicações de rede escaláveis. O paradigma baseado em eventos permite múltiplas conexões de diversos clientes ao servidor de forma eficiente, escalável e oferecendo muito mais controle para o desenvolvedor sobre as atividades de sua aplicação \cite{tilkov2010node}.
+O \text{Node.js} é um ambiente de tempo de execução JavaScript assíncrono baseado em eventos, construído sobre o motor JavaScript V8 da Google, rodando do lado do servidor. Surgiu com o propósito de possibilitar a criação de aplicações de rede escaláveis. O paradigma baseado em eventos permite múltiplas conexões de diversos clientes ao servidor de forma eficiente, escalável e oferecendo muito mais controle para o desenvolvedor sobre as atividades de sua aplicação \cite{tilkov2010node}.
     
-O \textit{Node.js} será utilizado no escopo deste projeto para criação de um serviço responsável pela obtenção dos dados da estação meteorológica, empregando uma comunicação serial através de um \textit{socket TCP}, e pela inserção posterior desses no banco de dados. Haverá também outro serviço para a recuperação dos dados à serem usados na aplicação cliente, ou seja, o serviço terá o papel de fornecer uma API que por meio de requisições HTTP insira e recupere informações da base de dados.
+O \textit{Node.js} foi utilizado no escopo deste projeto para criação de um serviço responsável pela obtenção dos dados da estação meteorológica, empregando uma comunicação serial através de um \textit{socket TCP}, e pela inserção posterior desses no banco de dados. Há também outro serviço para a recuperação dos dados à serem usados na aplicação cliente, ou seja, o serviço terá o papel de fornecer uma API que por meio de requisições HTTP insira e recupere informações da base de dados.
 
 A motivação da escolha dessa tecnologia é baseada nas duas características seguintes, o código do software é aberto e o fato da tecnologia também usar JavaScript torna natural a integração com aplicações \textit{cross-platform} que utilizam da mesma linguagem de programação. Além de facilitar a comunicação com a base de dados.
 
 
 \subsection{MongoDB} \label{subsec:MongoDB}
 
-O MongoDB é um banco de dados não relacional baseado em documentos, que armazena os dados em um formato semelhante ao JSON. O software é grátis e de código aberto, licenciado sob a \textit{GNU Affero General Public License}. É adotado por grandes empresas como \textit{Adobe, Twitter, GitHub e Amazon}. A adoção desse banco de dados é justificada pela sua consistência, velocidade, escalabilidade e facilidade de utilização \cite{SITEMONGODB}. Além disso, os dados a serem trabalhados são do tipo chave-valor simples e não requerem uma base de dados relacional.
+O MongoDB é um banco de dados não relacional baseado em documentos, que armazena os dados em um formato semelhante ao Json. O software é grátis e de código aberto, licenciado sob a \textit{GNU Affero General Public License}. É adotado por grandes empresas como \textit{Adobe, Twitter, GitHub e Amazon}. A adoção desse banco de dados é justificada pela sua consistência, velocidade, escalabilidade e facilidade de utilização \cite{SITEMONGODB}. Além disso, os dados a serem trabalhados são do tipo chave-valor simples e não requerem uma base de dados relacional.
 
 O banco de dados será usado majoritariamente para guardar as informações das variáveis climáticas provenientes das leituras da estação meteorológica, com a finalidade de manter um histórico das variações. Pois, o armazenamento disponível na estação é limitado e os dados são substituídos por novos à medida que as novas leituras ocorrem.
 

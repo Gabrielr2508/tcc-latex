@@ -12,19 +12,19 @@ O módulo de captura dos dados têm seu funcionamento ilustrado na figura \ref{i
 
 \imagem{0.55}{capturadados}{Módulos de captura e gerenciamento dos dados}{O Autor}
 
-O primeiro \textit{script}, Script Agendador (a), é responsável por executar, a cada intervalo pré-determinado de tempo, uma \textit{thread} composta pelo Script Cliente (b). O Script Driver é um programa que se conecta à estação meteorológica utilizando \textit{socket TCP}, envia um comando de \textit{LOOP} (ver anexo \ref{anex:anexo1}), recebe a resposta do comando contendo os dados e converte as unidades de medida. O Script Cliente possui o papel de criar uma instância do Script Driver (c), e após o recebimento dos dados, salvá-los na base de dados por intermédio de uma requisição HTTP para a API RESTful.
+O primeiro \textit{script}, Script Agendador (a), é responsável por executar, a cada intervalo pré-determinado de tempo, uma \textit{thread} composta pelo Script Cliente (b). O Script Driver é um programa que se conecta à estação meteorológica utilizando \textit{socket TCP}, envia um comando de \textit{LOOP} (ver anexo \ref{anex:anexo1}), recebe a resposta do comando contendo os dados e em seguida converte as unidades de medida. O Script Cliente possui o papel de criar uma instância do Script Driver (c), e após o recebimento dos dados, salvá-los na base de dados por intermédio de uma requisição HTTP para a API RESTful.
 
-O agendador do Node.js possui a mesma sintaxe do GNU crontab \cite{SITEGNUCRONTAB, SITEVIVALINUXCRONTAB, NODECRON} onde cada asterisco representa uma medida de tempo de acordo com o seguinte padrão:
+O agendador do Node.js, utilizado no Script Agendador para capturar os dados em determinados períodos de tempo, possui a mesma sintaxe do GNU crontab \cite{SITEGNUCRONTAB, SITEVIVALINUXCRONTAB, NODECRON} onde cada asterisco representa uma medida de tempo de acordo com o seguinte padrão:
  
 \centerline{[minutos] [horas] [dias do mês] [mês] [dias da semana]}
 
 \sourcecode{Configuração do intervalo de execução no Script Agendador}{cron}{javascript}{cron.js}
 
-No exemplo acima o Script Cliente é executado por uma \textit{thread} a cada 15 (quinze) minutos.
+No exemplo do código acima o Script Cliente é executado por uma \textit{thread} a cada 15 (quinze) minutos.
 
 \subsection{Módulo de gerenciamento dos dados}
 
-O módulo de gerenciamento dos dados é formado pela API do sistema e pela base de dados. A API possui rotas relacionadas ao gerenciamento dos dados climáticos e aos dados dos usuários, como pode ser observado na subseção \ref{subsec:api}. Também foi construída utilizando-se da linguagem \textit{Javascript} e do ambiente de execução \textit{Node.js}, incluindo o modelo de documentos dos usuários e dos dados climáticos.
+O módulo de gerenciamento dos dados é formado pela API do sistema e pela base de dados. A API possui rotas relacionadas ao gerenciamento dos dados climáticos e dos dados dos usuários, como pode ser observado na subseção \ref{subsec:api}. Também foi construída utilizando-se da linguagem \textit{Javascript} e do ambiente de execução \textit{Node.js}, incluindo o modelo de documentos dos usuários e dos dados climáticos.
  
 O servidor de banco de dados executa uma base não relacional baseada em documentos chamada MongoDB (ver subseções \ref{subsec:MongoDB} e \ref{subsec:datamodel}).
 
@@ -38,7 +38,7 @@ A aplicação Ionic pode ser compilada tanto para \textit{Web}, quanto para as p
 \section{Diagramas de Engenharia de Software} \label{sec:diagramas}
 A etapa inicial no desenvolvimento de \textit{software} é compreender os relacionamentos entre o \textit{software} em projeto e o seu ambiente exterior. Esta etapa é essencial porque mostra como se dará a estrutura do sistema para se comunicar com o seu ambiente e quais serão os limites estabelecidos para o mesmo. A definição do sistema informa quais serão as funcionalidades implementadas e os recursos disponíveis \cite{sommerville2011engenharia}.
 
-Os diagramas abordados serão o de caso de uso, de sequência e de atividade. Esses três diagramas proporcionam uma visão geral de cada etapa do funcionamento do sistema. Além disso, será discutido também um modelo de documento referente ao banco de dados adotado.
+Os diagramas abordados serão o de caso de uso, de sequência e de atividade. Esses três diagramas proporcionam uma visão geral de cada etapa do funcionamento do sistema. Além disso, serão discutidos também os modelos de documentos referentes ao banco de dados adotado.
 
 \subsection{Casos de uso} \label{subsec:casosDeUso}
 
@@ -61,7 +61,6 @@ A figura \ref{img:caso_de_uso_1} mostra o caso de uso referente à utilização 
 	    	\item Fluxo de eventos primário
 			    \begin{enumerate}
 	    		    \item o usuário deve se cadastrar informando seu nome, \textit{e-mail} e senha;
-	        		\item caso o usuário não seja autenticado, o sistema informa a respeito de credenciais inválidas e encerra o caso de uso;
 		        	\item a API armazena os dados do usuário;
 		    	    \item o usuário é liberado para realizar o \textit{login}.
 			    \end{enumerate}
@@ -345,7 +344,7 @@ A figura \ref{img:sequencia3} demonstra o caso de obtenção dos dados da estaç
 	\item O Script Cliente inicia uma nova instância do Script Driver;
 	\item O Script Driver envia através de uma conexão TCP o comando de LOOP para o \textit{datalogger} da estação;
 	\item O \textit{datalogger} responde ao comando de LOOP retornando um pacote de 99 \textit{bytes} contendo os dados da última leitura da estação;
-	\item O Script Driver retorna para o Script Client um Json contendo os dados convertidos para as unidades mais usuais;
+	\item O Script Driver retorna para o Script Client um Json contendo os dados já convertidos para as unidades mais usuais;
 	\item O Script Cliente envia para a API, através de uma requisição HTTP, os dados coletados;
 	\item A API solicita à base de dados a inserção das informações;
 	\item A base de dados confirma a inserção das informações para a API;
@@ -381,7 +380,7 @@ A aplicação cliente ou interface de usuário contém sete telas, sendo: tela d
 \end{figure}
 
 
-Além disso, será sempre permitido ao usuário retornar para a tela anterior através do botão voltar, com exceção das telas de \textit{login} e cadastro, que só serão acessíveis se o usuário realizar \textit{logoff} ou reinstalar a aplicação. O fluxo de funcionamento da aplicação cliente é representado pelo diagrama de atividades da figura \ref{img:atividades1} na subseção \ref{subsec:diagAtiv}.
+Será sempre permitido ao usuário retornar para a tela anterior através do botão voltar, com exceção das telas de \textit{login} e cadastro, que só serão acessíveis se o usuário realizar \textit{logoff} ou reinstalar a aplicação. O fluxo de funcionamento da aplicação cliente é representado pelo diagrama de atividades da figura \ref{img:atividades1} na subseção \ref{subsec:diagAtiv}.
 
 A figura \ref{img:login} mostra a tela utilizada no caso de uso de autenticação do usuário. A figura \ref{img:dados_atuais} mostra a tela de visualização dos dados atuais. As figuras, \ref{img:hist-time} e \ref{img:hist-rel} correspondem ao caso de uso de visualização de histórico.
 
@@ -422,6 +421,6 @@ Os valores de cada chave adotada para o modelo de documentos são providos pelo 
 \imagem{0.55}{collection}{Modelo de documento das leituras do sistema}{O Autor}
 
 
-O outro modelo de dados do sistema é referente aos dados de usuário, como indicados na figura \ref{img:collection2}. Os valores desses dados são preenchidos no momento do cadastro do usuário. Neste momento o sistema criptografa a senha enviada, por meio do algortimo \textit{bcrypt}, e salva somente a criptografia no banco. 
+O outro modelo de dados do sistema é referente aos dados de usuário, como indicados na figura \ref{img:collection2}. Os valores desses dados são preenchidos no momento do cadastro do usuário. Neste momento o sistema criptografa a senha enviada, por meio do algortimo \textit{bcrypt}, e salva somente a senha criptografada no banco. 
 
 \imagem{0.55}{collection2}{Modelo de documento dos usuários do sistema}{O Autor}

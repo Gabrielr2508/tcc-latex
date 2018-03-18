@@ -1,26 +1,26 @@
 \select@language {brazil}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces A esta\IeC {\c c}\IeC {\~a}o meteorol\IeC {\'o}gica \textit {Vantage Vue\IeC {\texttrademark }}\relax }}{20}{figure.caption.10}
-\contentsline {figure}{\numberline {2}{\ignorespaces O \textit {datalogger WeatherLinkIP\IeC {\textregistered }}\relax }}{20}{figure.caption.11}
-\contentsline {figure}{\numberline {3}{\ignorespaces O Ciclo de Vida do Mosquito \textit {Aedes Aegypti} e suas depend\IeC {\^e}ncias clim\IeC {\'a}ticas di\IeC {\'a}rias\relax }}{23}{figure.caption.12}
-\contentsline {figure}{\numberline {4}{\ignorespaces Depend\IeC {\^e}ncia da temperatura na sobreviv\IeC {\^e}ncia dos est\IeC {\'a}gios de vida do mosquito \textit {Aedes Aegypti}\relax }}{24}{figure.caption.13}
-\contentsline {figure}{\numberline {5}{\ignorespaces A pilha de software do Android\relax }}{25}{figure.caption.14}
-\contentsline {figure}{\numberline {6}{\ignorespaces Processos de aplica\IeC {\c c}\IeC {\~a}o, \textit {sockets} e protocolo de transporte subjacente\relax }}{30}{figure.caption.17}
+\contentsline {figure}{\numberline {1}{\ignorespaces A esta\IeC {\c c}\IeC {\~a}o meteorol\IeC {\'o}gica \textit {Vantage Vue\IeC {\texttrademark }}\relax }}{19}{figure.caption.10}
+\contentsline {figure}{\numberline {2}{\ignorespaces O \textit {datalogger WeatherLinkIP\IeC {\textregistered }}\relax }}{19}{figure.caption.11}
+\contentsline {figure}{\numberline {3}{\ignorespaces O Ciclo de Vida do Mosquito \textit {Aedes Aegypti} e suas depend\IeC {\^e}ncias clim\IeC {\'a}ticas di\IeC {\'a}rias\relax }}{22}{figure.caption.12}
+\contentsline {figure}{\numberline {4}{\ignorespaces Depend\IeC {\^e}ncia da temperatura na sobreviv\IeC {\^e}ncia dos est\IeC {\'a}gios de vida do mosquito \textit {Aedes Aegypti}\relax }}{23}{figure.caption.13}
+\contentsline {figure}{\numberline {5}{\ignorespaces A pilha de software do Android\relax }}{24}{figure.caption.14}
+\contentsline {figure}{\numberline {6}{\ignorespaces Processos de aplica\IeC {\c c}\IeC {\~a}o, \textit {sockets} e protocolo de transporte subjacente\relax }}{29}{figure.caption.17}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7}{\ignorespaces Modelo de Desenvolvimento de \textit {Software} Cascata\relax }}{31}{figure.caption.18}
-\contentsline {figure}{\numberline {8}{\ignorespaces M\IeC {\'o}dulos do sistema\relax }}{34}{figure.caption.19}
-\contentsline {figure}{\numberline {9}{\ignorespaces Vis\IeC {\~a}o geral do sistema\relax }}{34}{figure.caption.20}
+\contentsline {figure}{\numberline {7}{\ignorespaces Modelo de Desenvolvimento de \textit {Software} Cascata\relax }}{30}{figure.caption.18}
+\contentsline {figure}{\numberline {8}{\ignorespaces M\IeC {\'o}dulos do sistema\relax }}{33}{figure.caption.19}
+\contentsline {figure}{\numberline {9}{\ignorespaces Vis\IeC {\~a}o geral do sistema\relax }}{33}{figure.caption.20}
 \contentsline {figure}{\numberline {10}{\ignorespaces Modelo de aplica\IeC {\c c}\IeC {\~a}o \textit {cross-platform} h\IeC {\'\i }brida\relax }}{35}{figure.caption.21}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {11}{\ignorespaces M\IeC {\'o}dulos de captura e gerenciamento dos dados\relax }}{37}{figure.caption.22}
-\contentsline {figure}{\numberline {12}{\ignorespaces Diagrama de caso de uso referente ao usu\IeC {\'a}rio final\relax }}{39}{figure.caption.24}
-\contentsline {figure}{\numberline {13}{\ignorespaces Diagrama de caso de uso do ponto de vista da API\relax }}{41}{figure.caption.25}
-\contentsline {figure}{\numberline {14}{\ignorespaces Diagrama de sequ\IeC {\^e}ncia do sistema no contexto de visualiza\IeC {\c c}\IeC {\~a}o dos dados\relax }}{45}{figure.caption.26}
-\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama de sequ\IeC {\^e}ncia do sistema no contexto de obten\IeC {\c c}\IeC {\~a}o de dados\relax }}{46}{figure.caption.29}
-\contentsline {figure}{\numberline {16}{\ignorespaces Diagrama de atividades do sistema\relax }}{48}{figure.caption.30}
-\contentsline {figure}{\numberline {17}{\ignorespaces Telas da aplica\IeC {\c c}\IeC {\~a}o cliente\relax }}{49}{figure.caption.31}
-\contentsline {figure}{\numberline {18}{\ignorespaces Modelo de documento das leituras do sistema\relax }}{51}{figure.caption.33}
-\contentsline {figure}{\numberline {19}{\ignorespaces Modelo de documento dos usu\IeC {\'a}rios do sistema\relax }}{51}{figure.caption.34}
+\contentsline {figure}{\numberline {12}{\ignorespaces Diagrama de caso de uso referente ao usu\IeC {\'a}rio final\relax }}{40}{figure.caption.24}
+\contentsline {figure}{\numberline {13}{\ignorespaces Diagrama de caso de uso do ponto de vista da API\relax }}{42}{figure.caption.25}
+\contentsline {figure}{\numberline {14}{\ignorespaces Diagrama de sequ\IeC {\^e}ncia do sistema no contexto de visualiza\IeC {\c c}\IeC {\~a}o dos dados\relax }}{46}{figure.caption.26}
+\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama de sequ\IeC {\^e}ncia do sistema no contexto de obten\IeC {\c c}\IeC {\~a}o de dados\relax }}{47}{figure.caption.29}
+\contentsline {figure}{\numberline {16}{\ignorespaces Diagrama de atividades do sistema\relax }}{49}{figure.caption.30}
+\contentsline {figure}{\numberline {17}{\ignorespaces Telas da aplica\IeC {\c c}\IeC {\~a}o cliente\relax }}{50}{figure.caption.31}
+\contentsline {figure}{\numberline {18}{\ignorespaces Modelo de documento das leituras do sistema\relax }}{52}{figure.caption.33}
+\contentsline {figure}{\numberline {19}{\ignorespaces Modelo de documento dos usu\IeC {\'a}rios do sistema\relax }}{52}{figure.caption.34}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
