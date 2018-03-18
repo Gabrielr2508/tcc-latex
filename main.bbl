@@ -41,8 +41,8 @@ Dispon{\'\i}vel em: \url{https://developer.android.com}. Acesso em: Agosto de
 
 \bibitem[Bernardo 2015]{SITEINTERATIVOINCREMENTAL}
 \abntrefinfo{Bernardo}{BERNARDO}{2015}
-{BERNARDO, K. \emph{\textup{\textbf{Iterativo e incremental: Suas
-  definições}}}. 2015.
+{BERNARDO, K. \emph{\textup{\textbf{Iterativo e incremental:} Suas
+  definições}}. 2015.
 Dispon{\'\i}vel em:
   \url{https://www.culturaagil.com.br/iterativo-e-incremental-suas-definicoes/}.
   Acesso em: Março de 2018.}
@@ -65,8 +65,8 @@ Dispon{\'\i}vel em:
 
 \bibitem[{CASA DA CONSULTORIA} 2017]{SITECASCATA1}
 \abntrefinfo{{CASA DA CONSULTORIA}}{{CASA DA CONSULTORIA}}{2017}
-{{CASA DA CONSULTORIA}. \emph{\textup{\textbf{Modelo Cascata: O que é e como
-  funciona?}}} 2017.
+{{CASA DA CONSULTORIA}. \emph{\textup{\textbf{Modelo Cascata:} O que é e como
+  funciona?}} 2017.
 Dispon{\'\i}vel em: \url{http://casadaconsultoria.com.br/modelo-cascata/}.
   Acesso em: Março de 2018.}
 
@@ -138,8 +138,8 @@ Dispon{\'\i}vel em: \url{http://www.davisnet.com/solution/vantage-vue/}. Acesso
 
 \bibitem[Filho 2003]{engsoftwilson}
 \abntrefinfo{Filho}{FILHO}{2003}
-{FILHO, W. de P.~P. \emph{Engenharia de Software: fundamentos, métodos e
-  padrões}. [S.l.]: LTC, 2003. v.~2.}
+{FILHO, W. de P.~P. \emph{\textup{\textbf{Engenharia de Software:} fundamentos,
+  métodos e padrões}}. [S.l.]: LTC, 2003. v.~2.}
 
 \bibitem[Fraternali e Paolini 1998]{fraternali1998conceptual}
 \abntrefinfo{Fraternali e Paolini}{FRATERNALI; PAOLINI}{1998}
@@ -273,9 +273,9 @@ Dispon{\'\i}vel em: \url{https://www.mongodb.com}. Acesso em: Agosto de 2017.}
 \bibitem[Paranhos 2008]{paranhos2008moscas}
 \abntrefinfo{Paranhos}{PARANHOS}{2008}
 {PARANHOS, B. \textbf{Moscas-das-frutas que oferecem riscos {\`a} fruticultura
-  brasileira}. In:  IN: SIMP{\'O}SIO INTERNACIONAL DE VITIVINICULTURA, 1.;
-  FEIRA NACIONAL DA AGRICULTURA IRRIGADA-FENAGRI, EMBRAPA SEMI-{\'A}RIDO.
-  Petrolina, 2008.}
+  brasileira}. In:  SIMP{\'O}SIO INTERNACIONAL DE VITIVINICULTURA, 1.; FEIRA
+  NACIONAL DA AGRICULTURA IRRIGADA-FENAGRI, EMBRAPA SEMI-{\'A}RIDO. Petrolina,
+  2008.}
 
 \bibitem[Pastor 2004]{pastor2004fitting}
 \abntrefinfo{Pastor}{PASTOR}{2004}
@@ -311,9 +311,9 @@ Dispon{\'\i}vel em: \url{https://www.mongodb.com}. Acesso em: Agosto de 2017.}
 
 \bibitem[Royce 1970]{royce1970managing}
 \abntrefinfo{Royce}{ROYCE}{1970}
-{ROYCE, W.~W. Managing the development of large systems: Concepts and
-  techniques. In:  \emph{9th International Conference on Software Engineering.
-  ACM}. [S.l.: s.n.], 1970. p. 328--38.}
+{ROYCE, W.~W. \textup{\textbf{managing the development of large systems:}
+  concepts and techniques}. In:  \emph{9th International Conference on Software
+  Engineering. ACM}. [S.l.: s.n.], 1970. p. 328--38.}
 
 \bibitem[Saha 2008]{saha2008developer}
 \abntrefinfo{Saha}{SAHA}{2008}
