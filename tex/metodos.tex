@@ -67,7 +67,7 @@ A seguir são listados os requisitos elencados para este projeto.
 Inicialmente buscou-se compreender a arquitetura do sistema como um todo, levando em consideração o objetivo geral do projeto. Diante disso, identificou-se a necessidade de projetar uma arquitetura composta de um módulo responsável por obter os dados da estação meteorológica, um módulo com o papel de gerenciar os dados obtidos e por fim, um módulo para exibir as informações, ver figura \ref{img:modulos}.
 
 \imagem{0.6}{modulos}{Módulos do sistema}{O Autor} 
-
+\newpage
 Para satisfazer a necessidade de operação da arquitetura da estação \textit{Vantage Vue™}, aderiu-se o \textit{socket TCP} como forma de captura dos dados pelo módulo responsável. Como o objetivo geral do projeto especifica que o sistema deve operar via \textit{internet}, o módulo de gerenciamento de dados foi projetado como uma API RESTful. O fato de ser adotada uma API para o sistema, resolve o problema de intercomunicação entre os módulos e a base de dados, pois atua como uma camada de abstração que gerencia toda a comunicação. Desta forma, o módulo de captura dos dados e o módulo de exibição podem se comunicar com o módulo de gerenciamento através de requisições HTTP, explanadas na subseção \ref{subsec:api}.
 
 Além do mais, ambos os módulos de captura e de gerenciamento dos dados foram implementados utilizando a linguagem \textit{Javascript} e foram executadas no ambiente de execução \textit{Node.js}.
@@ -78,7 +78,7 @@ A figura \ref{img:visaogeral}  demonstra o panorama geral do projeto e o context
 
 \imagem{0.165}{visaogeral}{Visão geral do sistema}{O autor}
 
-\newpage
+%\newpage
 
 A suíte de sensores da estação meteorológica (a) transmite as informações captadas por ondas de rádio para o seu console (b) que as exibe localmente em sua tela. O servidor de obtenção dos dados (d) requisita para o \textit{datalogger} as informações contidas no console. O \textit{datalogger} (c) captura essas informações e responde a requisição. O servidor de obtenção dos dados envia para o servidor de aplicação (e) as informações. A API então processa as informações colhidas, salva os dados no banco (f) e disponibiliza-os através da \textit{internet} (g) para a aplicação cliente (f).
 
