@@ -8,11 +8,11 @@ Neste capítulo são apresentados os resultados obtidos com o projeto da arquite
 
 \subsection{Módulo de captura dos dados} 
 
-O módulo de captura dos dados têm seu funcionamento ilustrado na figura \ref{img:capturadados}. Como dito anteriormente, periodicamente este módulo obtém informações da estação meteorológica \textit{Vantage Vue™} e os armazena na base de dados por meio do módulo de gerenciamento de dados. Para cumprir sua função, o módulo foi dividido em três \textit{scripts} escritos em \textit{Javascript} e executados em \textit{Node.js}. 
+O módulo de captura dos dados têm seu funcionamento ilustrado na figura \ref{img:capturadados}. Periodicamente este módulo obtém informações da estação meteorológica \textit{Vantage Vue™} e as armazena na base de dados por meio do módulo de gerenciamento de dados. Para cumprir sua função, o módulo foi dividido em três \textit{scripts} escritos em \textit{Javascript} e executados em \textit{Node.js}. 
 
 \imagem{0.55}{capturadados}{Módulos de captura e gerenciamento dos dados}{O Autor}
 
-O primeiro \textit{script}, Script Agendador (a), é responsável por executar, a cada intervalo pré-determinado de tempo, uma \textit{thread} composta pelo Script Cliente (b). O Script Driver é um programa que se conecta à estação meteorológica utilizando \textit{socket TCP}, envia um comando de \textit{LOOP} (ver anexo \ref{anex:anexo1}), recebe a resposta do comando contendo os dados e em seguida converte as unidades de medida. O Script Cliente possui o papel de criar uma instância do Script Driver (c), e após o recebimento dos dados, salvá-los na base de dados por intermédio de uma requisição HTTP para a API RESTful.
+O primeiro \textit{script}, Script Agendador (a), é responsável por executar, a cada intervalo pré-determinado de tempo, uma \textit{thread} composta pelo Script Cliente (b). O Script Driver (c) é um programa que se conecta à estação meteorológica utilizando \textit{socket TCP}, envia um comando de \textit{LOOP} (ver anexo \ref{anex:anexo1}), recebe a resposta do comando contendo os dados e em seguida converte as unidades de medida. O Script Cliente possui o papel de criar uma instância do Script Driver, e após o recebimento dos dados, salvá-los na base de dados por intermédio de uma requisição HTTP para a API RESTful.
 
 O agendador do Node.js, utilizado no Script Agendador para capturar os dados em determinados períodos de tempo, possui a mesma sintaxe do GNU crontab \cite{SITEGNUCRONTAB, SITEVIVALINUXCRONTAB, NODECRON} onde cada asterisco representa uma medida de tempo de acordo com o seguinte padrão:
  
@@ -24,7 +24,7 @@ No exemplo do código acima o Script Cliente é executado por uma \textit{thread
 
 \subsection{Módulo de gerenciamento dos dados}
 
-O módulo de gerenciamento dos dados é formado pela API do sistema e pela base de dados. A API possui rotas relacionadas ao gerenciamento dos dados climáticos e dos dados dos usuários, como pode ser observado na subseção \ref{subsec:api}. Também foi construída utilizando-se da linguagem \textit{Javascript} e do ambiente de execução \textit{Node.js}, incluindo o modelo de documentos dos usuários e dos dados climáticos.
+O módulo de gerenciamento dos dados é formado pela API do sistema e pela base de dados. A API possui rotas relacionadas ao gerenciamento dos dados climáticos e dos dados dos usuários, como pode ser observado na subseção \ref{subsec:api}. Também foi construída utilizando-se da linguagem \textit{Javascript} e do ambiente de execução \textit{Node.js}, incluindo os modelos de documentos dos usuários e dos dados climáticos.
  
 O servidor de banco de dados executa uma base não relacional baseada em documentos chamada MongoDB (ver subseções \ref{subsec:MongoDB} e \ref{subsec:datamodel}).
 
@@ -38,7 +38,7 @@ A aplicação Ionic pode ser compilada tanto para \textit{Web}, quanto para as p
 \section{Diagramas de Engenharia de Software} \label{sec:diagramas}
 A etapa inicial no desenvolvimento de \textit{software} é compreender os relacionamentos entre o \textit{software} em projeto e o seu ambiente exterior. Esta etapa é essencial porque mostra como se dará a estrutura do sistema para se comunicar com o seu ambiente e quais serão os limites estabelecidos para o mesmo. A definição do sistema informa quais serão as funcionalidades implementadas e os recursos disponíveis \cite{sommerville2011engenharia}.
 
-Os diagramas abordados serão o de caso de uso, de sequência e de atividade. Esses três diagramas proporcionam uma visão geral de cada etapa do funcionamento do sistema. Além disso, serão discutidos também os modelos de documentos referentes ao banco de dados adotado.
+Os diagramas abordados serão o de caso de uso, de sequência e de atividade. Esses três diagramas proporcionam uma visão geral de cada etapa do funcionamento do sistema. Além disso, será discutido também a inteface de usuário, a API do sistema e os modelos de documentos referentes ao banco de dados adotado.
 
 \subsection{Casos de uso} \label{subsec:casosDeUso}
 
@@ -116,17 +116,17 @@ A figura \ref{img:caso_de_uso_1} mostra o caso de uso referente à utilização 
 
 		    \item Fluxo de eventos primário
 			    \begin{enumerate}
-			        \item o usuário deve efetuar o \textit{login} informando o \textit{username} e a senha;
+			        \item o usuário deve efetuar o \textit{login} informando o \textit{e-mail} e a senha;
 			        \item caso o usuário não seja autenticado, o sistema informa a respeito de credenciais inválidas e encerra o caso de uso;
 			        \item a API autentica o usuário;
-			        \item o usuário é liberado qual período cujo histórico será exibido;
+			        \item o usuário é liberado para escolher qual período cujo histórico será exibido;
 			        \item o usuário seleciona as variáveis a serem exibidas no gráfico;
 			        \item após a visualização do histórico o usuário pode finalizar o caso de uso se desejar.
 			    \end{enumerate}
 
 		    \item Fluxo alternativo
 			    \begin{enumerate}
-			        \item após a escolha do período de exibição do histórico o usuário pode voltar para a tela anterior e um novo período;
+			        \item após a escolha do período de exibição do histórico o usuário pode voltar para a tela anterior e escolher um novo período;
 			        \item o histórico é exibido para o usuário;
 			        \item após a visualização do histórico o usuário pode finalizar o caso de uso ou efetuar uma nova consulta se desejar.
 			    \end{enumerate}
@@ -421,6 +421,6 @@ Os valores de cada chave adotada para o modelo de documentos são providos pelo 
 \imagem{0.55}{collection}{Modelo de documento das leituras do sistema}{O Autor}
 
 
-O outro modelo de dados do sistema é referente aos dados de usuário, como indicados na figura \ref{img:collection2}. Os valores desses dados são preenchidos no momento do cadastro do usuário. Neste momento o sistema criptografa a senha enviada, por meio do algortimo \textit{bcrypt}, e salva somente a senha criptografada no banco. 
+O outro modelo de dados do sistema é referente aos dados de usuário, como indicado na figura \ref{img:collection2}. Os valores desses dados são preenchidos no momento do cadastro do usuário. Neste momento o sistema criptografa a senha enviada, por meio do algortimo \textit{bcrypt}, e salva somente a senha criptografada no banco. 
 
 \imagem{0.55}{collection2}{Modelo de documento dos usuários do sistema}{O Autor}

@@ -12,7 +12,7 @@ A metodologia Cascata foi cunhada por \citeonline{royce1970managing}. É compost
 
 A primeira etapa busca compreender os requisitos do sistema, que normalmente baseiam-se nas funcionalidades que precisam ser fornecidas, nas limitações e nos objetivos do software. Em seguida há o projeto do sistema, composto do modelo de dados, arquitetura do \textit{software}, interfaces de usuário e demais detalhes \cite{SITECASCATA1, SITECASCATA2}.
 
-As etapas de implementação e testes dizem respeito à programação do \textit{software} em si e ao correto funcionamento das lógicas internas e funcionalidades externas do sistema, respectivamente. Por último têm-se a etapa de operação/manutenção, esta etapa resume-se a implantação, correção de erros não identificados durante a verificação, melhorias funcionais e suporte ao projeto \cite{SITECASCATA1, SITECASCATA2}.
+As etapas de implementação e integração dizem respeito à programação do \textit{software} em si e ao correto funcionamento das lógicas internas e funcionalidades externas do sistema, respectivamente. Por último têm-se a etapa de operação/manutenção, esta etapa resume-se a implantação, correção de erros não identificados durante a verificação, melhorias funcionais e suporte ao projeto \cite{SITECASCATA1, SITECASCATA2}.
 
 A adaptação buscou simplificar o método cascata para adequá-lo à realidade do projeto. Pois devido à existência de um único projetista / desenvolvedor e ao tempo disponível para a execução do trabalho, algumas restrições do método não foram levadas em consideração, como por exemplo a rigidez sequencial na transição entre as etapas e o estabelecimento de requisitos explícitos no início do projeto.
 
@@ -24,7 +24,7 @@ Portanto, o sistema foi subdividido em diversas partes de acordo com os requisit
 
 Os requisitos de um sistema nada mais são do que um conjunto de descrições à respeito do que o sistema deve fazer, quais funcionalidades/serviços são oferecidos e quais são as restrições ou qual é o escopo do mesmo. Os requisitos de um sistema podem ser classificados como funcionais e não funcionais \cite{sommerville2011engenharia}.
 
-Os requisitos ou características funcionais explicitam os serviços que o sistema deve oferecer, como ele deve reagir mediante determinadas entradas e qual seu comportamento em situações especificas \cite{sommerville2011engenharia, engsoftwilson}.
+Os requisitos ou características funcionais explicitam os serviços que o sistema deve oferecer, como ele deve reagir mediante determinadas entradas e qual seu comportamento em situações específicas \cite{sommerville2011engenharia, engsoftwilson}.
 
 As características não funcionais são restrições aos serviços ou funcionalidades fornecidas pelo sistema. Ou seja, os requisitos não funcionais qualificam os requisitos funcionais. A qualificação pode ser referente ao \textit{software}, como a performance, usabilidade, confiabilidade, tolerância à falha, dentre outros. Ou pode ser referente ao processo de desenvolvimento, como tempos de entrega, método de desenvolvimento, e assim por diante \cite{introrequisitos}.
 
@@ -88,7 +88,7 @@ A suíte de sensores da estação meteorológica (a) transmite as informações 
 
 \subsection{\textit{Ionic Framework}} \label{subsec:Ionic}
 
-O \textit{Ionic Framework} é um SDK que permite o desenvolvimento de aplicações multi-plataformas (\textit{Web, Android, iOS}) através de tecnologias \textit{Web} bem estabelecidas (HTML, CSS e JavaScript). O \textit{framework} é suportado pela tecnologia Angular \cite{SITEIONIC}.
+O \textit{Ionic Framework} é um SDK que permite o desenvolvimento de aplicações multiplataformas (\textit{Web, Android, iOS}) através de tecnologias \textit{Web} bem estabelecidas (HTML, CSS e JavaScript). O \textit{framework} é suportado pela tecnologia Angular \cite{SITEIONIC}.
 
 Angular é uma plataforma, mantida pela Google, que torna fácil a criação de aplicações \textit{Web} cliente através de combinações entre \textit{templates} declarativos, injeção de dependências e ferramentas ponta-a-ponta \cite{SITEANGULAR}.
 
@@ -106,7 +106,7 @@ O \text{Node.js} é um ambiente de tempo de execução JavaScript assíncrono ba
     
 O \textit{Node.js} foi utilizado no escopo deste projeto para criação de um serviço responsável pela obtenção dos dados da estação meteorológica, empregando uma comunicação serial através de um \textit{socket TCP}, e pela inserção posterior desses no banco de dados. Há também outro serviço para a recuperação dos dados à serem usados na aplicação cliente, ou seja, o serviço terá o papel de fornecer uma API que por meio de requisições HTTP insira e recupere informações da base de dados.
 
-A motivação da escolha dessa tecnologia é baseada nas duas características seguintes, o código do software é aberto e o fato da tecnologia também usar JavaScript torna natural a integração com aplicações \textit{cross-platform} que utilizam da mesma linguagem de programação. Além de facilitar a comunicação com a base de dados.
+A motivação da escolha dessa tecnologia é baseada nas duas características seguintes, o código do software é aberto e o fato da tecnologia também usar Javascript torna natural a integração com aplicações \textit{cross-platform} que utilizam da mesma linguagem de programação. Além de facilitar a comunicação com a base de dados.
 
 
 \subsection{MongoDB} \label{subsec:MongoDB}
