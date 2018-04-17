@@ -41,7 +41,7 @@
 \contentsline {chapter}{\chapternumberline {5}Considera\IeC {\c c}\IeC {\~o}es Finais e Trabalhos Futuros}{54}{chapter.5}
 \contentsline {section}{\numberline {5.1}Trabalhos futuros}{54}{section.5.1}
 \vspace {\cftbeforepartskip }
-\contentsline {chapter}{Refer\^encias}{55}{section*.37}
+\contentsline {chapter}{Refer\^encias}{55}{section*.36}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \contentsline {appendix}{\chapternumberline {A}Comandos seriais da esta\IeC {\c c}\IeC {\~a}o meteorol\IeC {\'o}gica \textit {Vantage Vue\IeC {\texttrademark }}}{60}{appendix.anexochapback.1}

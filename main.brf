@@ -24,11 +24,11 @@
 \backcite {torres2015aquisicao}{{20}{2.2}{section.2.2}}
 \backcite {SITEDAVIS, VVINSTMANUAL}{{20}{2.2}{section.2.2}}
 \backcite {SITEDAVIS, VVINSTMANUAL}{{20}{2.2}{section.2.2}}
-\backcite {SITEDAVIS}{{21}{1}{figure.caption.10}}
-\backcite {SITEDAVIS, VVCINSTMANUAL}{{21}{2.2}{figure.caption.10}}
-\backcite {SITEDAVIS, VVCINSTMANUAL}{{21}{2.2}{figure.caption.10}}
-\backcite {WLIP}{{22}{2.2}{figure.caption.11}}
-\backcite {WLIP}{{22}{2.2}{figure.caption.11}}
+\backcite {SITEDAVIS}{{21}{1}{figure.caption.9}}
+\backcite {SITEDAVIS, VVCINSTMANUAL}{{21}{2.2}{figure.caption.9}}
+\backcite {SITEDAVIS, VVCINSTMANUAL}{{21}{2.2}{figure.caption.9}}
+\backcite {WLIP}{{22}{2.2}{figure.caption.10}}
+\backcite {WLIP}{{22}{2.2}{figure.caption.10}}
 \backcite {paranhos2008moscas}{{22}{2.2.1}{subsection.2.2.1}}
 \backcite {paranhos2008moscas}{{22}{2.2.1}{subsection.2.2.1}}
 \backcite {calore2013fatores}{{22}{2.2.1}{subsection.2.2.1}}
@@ -40,18 +40,18 @@
 \backcite {hopp2001global}{{23}{2.2.2}{subsection.2.2.2}}
 \backcite {hopp2001global, ribeiro2006associaccao}{{23}{2.2.2}{subsection.2.2.2}}
 \backcite {hopp2001global, ribeiro2006associaccao}{{23}{2.2.2}{subsection.2.2.2}}
-\backcite {depradine2004climatological}{{23}{2.2.2}{figure.caption.13}}
-\backcite {hopp2001global}{{24}{3}{figure.caption.12}}
-\backcite {ribeiro2006associaccao}{{24}{2.2.2}{figure.caption.13}}
-\backcite {hopp2001global}{{25}{4}{figure.caption.13}}
+\backcite {depradine2004climatological}{{23}{2.2.2}{figure.caption.12}}
+\backcite {hopp2001global}{{24}{3}{figure.caption.11}}
+\backcite {ribeiro2006associaccao}{{24}{2.2.2}{figure.caption.12}}
+\backcite {hopp2001global}{{25}{4}{figure.caption.12}}
 \backcite {SITEANDROID}{{25}{2.3}{section.2.3}}
 \backcite {SITEANDROID, gandhewar2010google}{{25}{2.3.1}{subsection.2.3.1}}
 \backcite {SITEANDROID, gandhewar2010google}{{25}{2.3.1}{subsection.2.3.1}}
-\backcite {SITEANDROID2}{{26}{5}{figure.caption.14}}
-\backcite {SITEANDROID}{{26}{2.3.1}{figure.caption.14}}
-\backcite {SITEANDROID}{{26}{2.3.1}{figure.caption.14}}
-\backcite {SITEANDROID, saha2008developer}{{26}{2.3.1}{figure.caption.14}}
-\backcite {SITEANDROID, saha2008developer}{{26}{2.3.1}{figure.caption.14}}
+\backcite {SITEANDROID2}{{26}{5}{figure.caption.13}}
+\backcite {SITEANDROID}{{26}{2.3.1}{figure.caption.13}}
+\backcite {SITEANDROID}{{26}{2.3.1}{figure.caption.13}}
+\backcite {SITEANDROID, saha2008developer}{{26}{2.3.1}{figure.caption.13}}
+\backcite {SITEANDROID, saha2008developer}{{26}{2.3.1}{figure.caption.13}}
 \backcite {fraternali1998conceptual}{{27}{2.4}{section.2.4}}
 \backcite {pressman2000tangled}{{27}{2.4}{section.2.4}}
 \backcite {conte2005processos}{{27}{2.4}{section.2.4}}
@@ -68,21 +68,21 @@
 \backcite {raj2012study}{{28}{2.5}{section.2.5}}
 \backcite {raj2012study}{{29}{2.5}{section.2.5}}
 \backcite {raj2012study}{{29}{2.5}{section.2.5}}
-\backcite {raj2012study}{{29}{1}{table.caption.15}}
+\backcite {raj2012study}{{29}{1}{table.caption.14}}
 \backcite {arcuri2017restful, fielding2000architectural}{{29}{2.6}{section.2.6}}
 \backcite {arcuri2017restful, fielding2000architectural}{{29}{2.6}{section.2.6}}
-\backcite {hsieh2016method}{{30}{2}{table.caption.16}}
+\backcite {hsieh2016method}{{30}{2}{table.caption.15}}
 \backcite {torres2001completo}{{30}{2.7}{section.2.7}}
 \backcite {torres2001completo}{{30}{2.7}{section.2.7}}
 \backcite {james2005redes}{{30}{2.7}{section.2.7}}
-\backcite {james2005redes}{{31}{6}{figure.caption.17}}
+\backcite {james2005redes}{{31}{6}{figure.caption.16}}
 \backcite {royce1970managing}{{32}{3.1}{section.3.1}}
-\backcite {royce1970managing}{{32}{7}{figure.caption.18}}
-\backcite {SITECASCATA1, SITECASCATA2}{{33}{3.1}{figure.caption.18}}
-\backcite {SITECASCATA1, SITECASCATA2}{{33}{3.1}{figure.caption.18}}
-\backcite {SITECASCATA1, SITECASCATA2}{{33}{3.1}{figure.caption.18}}
-\backcite {SITECASCATA1, SITECASCATA2}{{33}{3.1}{figure.caption.18}}
-\backcite {SITEINTERATIVOINCREMENTAL}{{33}{3.1}{figure.caption.18}}
+\backcite {royce1970managing}{{32}{7}{figure.caption.17}}
+\backcite {SITECASCATA1, SITECASCATA2}{{33}{3.1}{figure.caption.17}}
+\backcite {SITECASCATA1, SITECASCATA2}{{33}{3.1}{figure.caption.17}}
+\backcite {SITECASCATA1, SITECASCATA2}{{33}{3.1}{figure.caption.17}}
+\backcite {SITECASCATA1, SITECASCATA2}{{33}{3.1}{figure.caption.17}}
+\backcite {SITEINTERATIVOINCREMENTAL}{{33}{3.1}{figure.caption.17}}
 \backcite {sommerville2011engenharia}{{33}{3.1.1}{subsection.3.1.1}}
 \backcite {sommerville2011engenharia, engsoftwilson}{{33}{3.1.1}{subsection.3.1.1}}
 \backcite {sommerville2011engenharia, engsoftwilson}{{33}{3.1.1}{subsection.3.1.1}}
@@ -91,12 +91,12 @@
 \backcite {SITEANGULAR}{{36}{3.2.1}{subsection.3.2.1}}
 \backcite {SITEIONIC}{{36}{3.2.1}{subsection.3.2.1}}
 \backcite {SITEIONIC}{{36}{3.2.1}{subsection.3.2.1}}
-\backcite {raj2012study}{{37}{10}{figure.caption.21}}
+\backcite {raj2012study}{{37}{10}{figure.caption.20}}
 \backcite {tilkov2010node}{{37}{3.2.2}{subsection.3.2.2}}
 \backcite {SITEMONGODB}{{37}{3.2.3}{subsection.3.2.3}}
-\backcite {SITEGNUCRONTAB, SITEVIVALINUXCRONTAB, NODECRON}{{40}{4.1.1}{figure.caption.22}}
-\backcite {SITEGNUCRONTAB, SITEVIVALINUXCRONTAB, NODECRON}{{40}{4.1.1}{figure.caption.22}}
-\backcite {SITEGNUCRONTAB, SITEVIVALINUXCRONTAB, NODECRON}{{40}{4.1.1}{figure.caption.22}}
+\backcite {SITEGNUCRONTAB, SITEVIVALINUXCRONTAB, NODECRON}{{40}{4.1.1}{figure.caption.21}}
+\backcite {SITEGNUCRONTAB, SITEVIVALINUXCRONTAB, NODECRON}{{40}{4.1.1}{figure.caption.21}}
+\backcite {SITEGNUCRONTAB, SITEVIVALINUXCRONTAB, NODECRON}{{40}{4.1.1}{figure.caption.21}}
 \backcite {sommerville2011engenharia}{{41}{4.2}{section.4.2}}
 \backcite {sommerville2011engenharia}{{41}{4.2.1}{subsection.4.2.1}}
 \backcite {SITESEQ}{{46}{4.2.2}{subsection.4.2.2}}
