@@ -1,4 +1,4 @@
-\chapter{Resultados e Discussões} \label{ch:RD}
+\chapter{Resultados} \label{ch:RD}
 
 
 Neste capítulo são apresentados os resultados obtidos com o projeto da arquitetura dos módulos do sistema e o seu desenvolvimento, juntamente com a documentação, os diagramas de engenharia de \textit{software} e o protótipo composto pela interface de usuário e a parte lógica do sistema.
@@ -8,7 +8,7 @@ Neste capítulo são apresentados os resultados obtidos com o projeto da arquite
 
 \subsection{Módulo de captura dos dados} 
 
-O módulo de captura dos dados têm seu funcionamento ilustrado na figura \ref{img:capturadados}. Periodicamente este módulo obtém informações da estação meteorológica \textit{Vantage Vue™} e as armazena na base de dados por meio do módulo de gerenciamento de dados. Para cumprir sua função, o módulo foi dividido em três \textit{scripts} escritos em \textit{Javascript} e executados em \textit{Node.js}. 
+O módulo de captura dos dados tem seu funcionamento ilustrado na figura \ref{img:capturadados}. Periodicamente, este módulo obtém informações da estação meteorológica \textit{Vantage Vue™} e as armazena na base de dados por meio do módulo de gerenciamento de dados. Para cumprir sua função, o módulo foi dividido em três \textit{scripts} escritos em \textit{Javascript} e executados em \textit{Node.js}. 
 
 \imagem{0.55}{capturadados}{Módulos de captura e gerenciamento dos dados}{O Autor}
 
@@ -20,7 +20,7 @@ O agendador do Node.js, utilizado no Script Agendador para capturar os dados em 
 
 \sourcecode{Configuração do intervalo de execução no Script Agendador}{cron}{javascript}{cron.js}
 
-No exemplo do código acima o Script Cliente é executado por uma \textit{thread} a cada 15 (quinze) minutos.
+No exemplo do código acima, o Script Cliente é executado por uma \textit{thread} a cada 15 (quinze) minutos.
 
 \subsection{Módulo de gerenciamento dos dados}
 
@@ -36,7 +36,7 @@ A aplicação Ionic pode ser compilada tanto para \textit{Web}, quanto para as p
 
 
 \section{Diagramas de Engenharia de Software} \label{sec:diagramas}
-A etapa inicial no desenvolvimento de \textit{software} é compreender os relacionamentos entre o \textit{software} em projeto e o seu ambiente exterior. Esta etapa é essencial porque mostra como se dará a estrutura do sistema para se comunicar com o seu ambiente e quais serão os limites estabelecidos para o mesmo. A definição do sistema informa quais serão as funcionalidades implementadas e os recursos disponíveis \cite{sommerville2011engenharia}.
+A etapa inicial no desenvolvimento de \textit{software} é compreender os relacionamentos entre o \textit{software} em projeto e o seu ambiente exterior. Esta etapa é essencial, porque mostra como se dará a estrutura do sistema para se comunicar com o seu ambiente e quais serão os limites estabelecidos para o mesmo. A definição do sistema informa quais serão as funcionalidades implementadas e os recursos disponíveis \cite{sommerville2011engenharia}.
 
 Os diagramas abordados serão o de caso de uso, de sequência e de atividade. Esses três diagramas proporcionam uma visão geral de cada etapa do funcionamento do sistema. Além disso, será discutido também a inteface de usuário, a API do sistema e os modelos de documentos referentes ao banco de dados adotado.
 
@@ -120,7 +120,7 @@ A figura \ref{img:caso_de_uso_1} mostra o caso de uso referente à utilização 
 			        \item caso o usuário não seja autenticado, o sistema informa a respeito de credenciais inválidas e encerra o caso de uso;
 			        \item a API autentica o usuário;
 			        \item o usuário é liberado para escolher qual período cujo histórico será exibido;
-			        \item o usuário seleciona as variáveis a serem exibidas no gráfico;
+			        \item o usuário seleciona as variáveis a serem exibidas no gráficos de linhas;
 			        \item após a visualização do histórico o usuário pode finalizar o caso de uso se desejar.
 			    \end{enumerate}
 
@@ -386,7 +386,7 @@ A figura \ref{img:login} mostra a tela utilizada no caso de uso de autenticaçã
 
 \subsection{A API do sistema} \label{subsec:api}
 
-Os URIs da API do sistema estão mostrados na tabela \ref{tab:api} abaixo. A tabela divide-se em três partes, a primeira representa as ações que podem ser executadas por um usuário não autenticado, a segunda evidencia as ações possíveis para um usuário que efetuou \textit{login} e a terceira expõe as ações internas do sistema.
+Os URIs da API do sistema estão mostrados na tabela \ref{tab:api} abaixo. A tabela divide-se em três partes: a primeira representa as ações que podem ser executadas por um usuário não autenticado, a segunda evidencia as ações possíveis para um usuário que efetuou \textit{login} e a terceira expõe as ações internas do sistema.
 
 %\definecolor{Gray}{gray}{0.85}
 %\newpage
@@ -412,7 +412,7 @@ Os URIs da API do sistema estão mostrados na tabela \ref{tab:api} abaixo. A tab
 
 \subsection{Modelos de dados do sistema} \label{subsec:datamodel}
 
-O banco de dados escolhido para a implementação do projeto é não-relacional baseado em documentos. Os documentos podem conter vários pares chave-valor, ou vários pares chave-vetor, ou até vários documentos encadeados. A estrutura do documento é flexível, o que permite alterações e inserções futuras de dados novos em uma base preexistente \cite{SITEMONGODB}. Um dos modelos de dados adotado para o projeto é mostrado na figura \ref{img:collection} abaixo, onde de um lado têm-se as chaves representando os dados fornecidos pela estação e do outro seus respectivos valores.
+O banco de dados escolhido para a implementação do projeto é não-relacional baseado em documentos. Os documentos podem conter vários pares chave-valor, ou vários pares chave-vetor, ou até vários documentos encadeados. A estrutura do documento é flexível, o que permite alterações e inserções futuras de dados novos em uma base preexistente \cite{SITEMONGODB}. Um dos modelos de dados adotado para o projeto é mostrado na figura \ref{img:collection}, onde de um lado têm-se as chaves representando os dados fornecidos pela estação e do outro seus respectivos valores.
 
 Os valores de cada chave adotada para o modelo de documentos são providos pelo \textit{datalogger} da estação. As chaves possuem o valor obtido diretamente dos sensores.
 

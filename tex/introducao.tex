@@ -1,23 +1,25 @@
 \chapter{Introdução}
 
-A mosca-das-frutas é uma praga causadora de diversos danos à produção de frutas e hortaliças. No Submédio do Vale do São Francisco são encontradas várias espécies desses insetos. A Organização Moscamed Brasil surge com a intenção de realizar a supressão dessa população através da Técnica do Inseto Estéril - TIE, cuja aplicação é adotada em mais de 28 países \cite{MOSCAMEDINST2003}. 
+A mosca-das-frutas é uma praga causadora de diversos danos à produção de cerca de 400 (quatrocentas) espécies plantas frutíferas \cite{medfly}. No Submédio do Vale do São Francisco são encontradas várias espécies desses insetos. A Organização Moscamed Brasil surge com a intenção de realizar a supressão dessa população através da Técnica do Inseto Estéril - TIE, cuja aplicação é adotada em mais de 28 países \cite{MOSCAMEDINST2003}. 
 
-Além da mosca-das-frutas, a Moscamed também é responsável pelo controle biológico da espécie de mosquito \textit{Aedes Aegypti}, vetor da doença reemergente mais importante do mundo, a dengue. Em 2007 cerca de 70\% dos Municípios brasileiros estavam infestados pelo mosquito \cite{BRAGA2007}. Neste caso, o controle ocorre de forma análoga ao das moscas, ambos usufruem da TIE.
+Além da mosca-das-frutas, a Moscamed também é responsável pelo controle biológico da espécie de mosquito \textit{Aedes Aegypti}, vetor da doença reemergente mais importante do mundo, a dengue. Em 2007, cerca de 70\% dos Municípios brasileiros estavam infestados pelo mosquito \cite{BRAGA2007}. Neste caso, o controle ocorre de forma análoga ao das moscas, ambos usufruem da TIE.
 
-A técnica criada por E.F.Knipling consiste em produzir machos estéreis e liberá-los na natureza em grande quantidade. As fêmeas da natureza então copulam com os machos estéreis e colocam ovos não fecundados, fazendo com que a próxima geração tenha sua densidade populacional reduzida \cite{paranhos2008moscas}. O êxito da TIE depende do sucesso dos machos estéreis na competição contra os nativos pelo acasalamento com as fêmeas da mosca-das-frutas ou do mosquito-da-dengue, e da consequente postura dos ovos não fecundados.
+A técnica, criada por E.F.Knipling, consiste em produzir machos estéreis e liberá-los na natureza em grande quantidade. As fêmeas da natureza então copulam com os machos estéreis e colocam ovos não fecundados, fazendo com que a próxima geração tenha sua densidade populacional reduzida \cite{paranhos2008moscas}. O êxito da TIE depende do sucesso dos machos estéreis na competição contra os nativos, pelo acasalamento com as fêmeas da mosca-das-frutas ou do mosquito-da-dengue, e da consequente postura dos ovos não fecundados.
 
 Contudo, o ciclo de vida das moscas na natureza é fortemente dependente da temperatura ambiente, além de outros fatores climáticos \cite{raga2000manejo}. A mosca-da-carambola necessita, por exemplo, de vinte e dois dias com clima favorável (26 ºC e 70\% UR) para se desenvolver completamente partindo da fase de ovo até a fase adulta \cite{malavasi2000moscas}. De mesmo modo, o ciclo de vida dos mosquitos também é fortemente dependente da temperatura e de outros fatores climáticos, seja em seu desenvolvimento ou em sua sobrevivência \cite{hopp2001global, ribeiro2006associaccao}.
 
-Neste contexto, com a finalidade de auxiliar a organização em suas tomadas de decisão, a proposta deste TCC é composta pelo desenvolvimento de um sistema \textit{Web}/aplicativo \textit{Android open-source} para consulta e armazenamento em banco de dados de informações provenientes de uma estação meteorológica sem fio \textit{Vantage Vue \textsuperscript{TM}}, instalada na Biofábrica Moscamed Brasil.
+Neste contexto, com a finalidade de auxiliar a organização em suas tomadas de decisão, a proposta deste TCC é o desenvolvimento de um sistema \textit{Web}/aplicativo \textit{Android open-source}, para consulta e armazenamento em banco de dados de informações provenientes de uma estação meteorológica sem fio \textit{Vantage Vue \textsuperscript{TM}}, instalada na Biofábrica Moscamed Brasil.
 
 \section{Justificativa}
 
+A utilização do sistema proposto em auxilio à tomada de decisão no processo da Técnica do Inseto Estéril, contribui no combate às pragas e no controle biológico das espécies trabalhadadas. Consequentemente, reduzindo o custo de produção e, melhorando a qualidade final e a segurança alimentar do produto agrícola. Além disso, o processo de melhoria na TIE, auxilia na substituição parcial das pulverizações com inseticidas na realização do controle biológico dos insetos.
+  
 Este TCC é um subprojeto do projeto Sistema de Gestão da Produção de Insetos Modificados para Regiões Endêmicas, conjunto entre a Moscamed e o Colegiado de Engenharia de Computação da Universidade Federal do Vale do São Francisco - CECOMP.
 
 
 \section{Objetivos gerais}
 
-Planejar e desenvolver um sistema capaz de informar, via \textit{internet}, dados meteorológicos obtidos de uma estação \textit{Vantage Vue \textsuperscript{TM}} e disponibilizar para o usuário dados e gráficos através de uma aplicação \textit{Web} e de um aplicativo para o sistema operacional \textit{Android}.
+Planejar e desenvolver um sistema capaz de informar via \textit{internet}, dados meteorológicos obtidos de uma estação \textit{Vantage Vue \textsuperscript{TM}} e disponibilizar para o usuário dados e gráficos (linhas e radar) através de uma aplicação \textit{Web} e de um aplicativo para o sistema operacional \textit{Android}.
 
 \section{Objetivos específicos}
 
@@ -30,12 +32,12 @@ Planejar e desenvolver um sistema capaz de informar, via \textit{internet}, dado
 
 \section{Organização do trabalho}
 
-O restante trabalho é dividido em quatro capítulos, referencial teórico, materiais e métodos, resultados e discussões, e conclusão e trabalhos futuros.
+O restante trabalho é dividido em quatro capítulos: referencial teórico, materiais e métodos, resultados e discussões, e conclusão e trabalhos futuros.
 
-O referencial teórico é organizado em duas seções, na primeira é explanado sobre a Moscamed, suas responsabilidades e a técnica de controle biológico empregada. Em seguida é estudada a estação meteorológica em questão e a influência das variáveis climáticas nas espécies controladas pela Moscamed. A segunda parte discorre sobre as bases conceituais das tecnologias utilizadas no processo de desenvolvimento, como a pilha de software do sistema operacional \textit{Android}, desenvolvimento \textit{web} e desenvolvimento de aplicações \textit{cross-platform}.
+O referencial teórico é organizado em duas seções: na primeira é explanado sobre a Moscamed, suas responsabilidades e a técnica de controle biológico empregada. Em seguida é estudada a estação meteorológica em questão e a influência das variáveis climáticas nas espécies controladas pela Moscamed. A segunda parte discorre sobre as bases conceituais das tecnologias utilizadas no processo de desenvolvimento, como a pilha de software do sistema operacional \textit{Android}, desenvolvimento \textit{web} e desenvolvimento de aplicações \textit{cross-platform}.
 
-Nos materiais e métodos é descrita a metodologia adotada para a concepção do projeto, os requisitos dos sistema e uma visão macroscópica da arquitetura do projeto. Nesse capítulo, ainda é mostrado o conjunto de tecnologias adotadas para a implementação do sistema.    
+Nos materiais e métodos, é descrita a metodologia adotada para a concepção do projeto, os requisitos dos sistema e uma visão macroscópica da arquitetura do projeto. Nesse capítulo, ainda é mostrado o conjunto de tecnologias adotadas para a implementação do sistema.    
 
 No capítulo de resultados e discussões são apresentados os passos para a concepção e construção do sistema através de diagramas e modelos gráficos dos seus vários elementos, como por exemplo banco de dados e interface de usuário.
 
-No capítulo conclusão e trabalhos futuros são explanados sucintamente os resultados obtidos com a finalização do projeto. Algumas sugestões que podem ser realizadas a posteriori também são indicadas.
+No capítulo conclusão e trabalhos futuros são explanados sucintamente os resultados obtidos com a finalização do projeto. Algumas sugestões que podem ser realizadas a \textit{posteriori} também são indicadas.

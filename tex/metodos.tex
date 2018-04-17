@@ -12,9 +12,9 @@ A metodologia Cascata foi cunhada por \citeonline{royce1970managing}. É compost
 
 A primeira etapa busca compreender os requisitos do sistema, que normalmente baseiam-se nas funcionalidades que precisam ser fornecidas, nas limitações e nos objetivos do software. Em seguida há o projeto do sistema, composto do modelo de dados, arquitetura do \textit{software}, interfaces de usuário e demais detalhes \cite{SITECASCATA1, SITECASCATA2}.
 
-As etapas de implementação e integração dizem respeito à programação do \textit{software} em si e ao correto funcionamento das lógicas internas e funcionalidades externas do sistema, respectivamente. Por último têm-se a etapa de operação/manutenção, esta etapa resume-se a implantação, correção de erros não identificados durante a verificação, melhorias funcionais e suporte ao projeto \cite{SITECASCATA1, SITECASCATA2}.
+As etapas de implementação e integração dizem respeito à programação do \textit{software} em si e ao correto funcionamento das lógicas internas e funcionalidades externas do sistema, respectivamente. Por último tem-se a etapa de operação/manutenção, que resume-se na implantação, correção de erros não identificados durante a verificação, melhorias funcionais e suporte ao projeto \cite{SITECASCATA1, SITECASCATA2}.
 
-A adaptação buscou simplificar o método cascata para adequá-lo à realidade do projeto. Pois devido à existência de um único projetista / desenvolvedor e ao tempo disponível para a execução do trabalho, algumas restrições do método não foram levadas em consideração, como por exemplo a rigidez sequencial na transição entre as etapas e o estabelecimento de requisitos explícitos no início do projeto.
+A adaptação buscou simplificar o método cascata para adequá-lo à realidade do projeto, pois devido à existência de um único projetista / desenvolvedor e ao tempo disponível para a execução do trabalho, algumas restrições do método não foram levadas em consideração, como por exemplo a rigidez sequencial na transição entre as etapas e o estabelecimento de requisitos explícitos no início do projeto.
 
 Para solucionar as restrições citadas anteriormente utilizou-se o modelo Iterativo e Incremental. Este método prioriza o desenvolvimento/entrega de \textit{software} funcional em pequenos pedaços. A cada nova iteração o sistema recebe novas funcionalidades. Deste modo, o sistema é construído de forma incremental \cite{SITEINTERATIVOINCREMENTAL}.
 
@@ -28,7 +28,7 @@ Os requisitos ou características funcionais explicitam os serviços que o siste
 
 As características não funcionais são restrições aos serviços ou funcionalidades fornecidas pelo sistema. Ou seja, os requisitos não funcionais qualificam os requisitos funcionais. A qualificação pode ser referente ao \textit{software}, como a performance, usabilidade, confiabilidade, tolerância à falha, dentre outros. Ou pode ser referente ao processo de desenvolvimento, como tempos de entrega, método de desenvolvimento, e assim por diante \cite{introrequisitos}.
 
-A seguir são listados os requisitos elencados para este projeto.
+Através de visitas realizadas à sede da organização, onde foram empreendidas algumas reuniões e entrevistas, e além disso, após a utilização do \textit{software WeatherLink®}, proprietário do fabricante da estação \textit{Vantage Vue \textsuperscript{TM}}, foram elencados os seguintes requisitos para este projeto.
 
 
 \subsubsection{Requisitos funcionais}
@@ -60,11 +60,11 @@ A seguir são listados os requisitos elencados para este projeto.
 
 \end{itemize}
 
-À partir dos requisitos elencados foram elaborados os casos de uso discutidos na subseção \ref{subsec:casosDeUso}.
+A partir dos requisitos elencados foram elaborados os casos de uso discutidos na subseção \ref{subsec:casosDeUso}.
 
 \subsection{Arquitetura do sistema}
 
-Inicialmente buscou-se compreender a arquitetura do sistema como um todo, levando em consideração o objetivo geral do projeto. Diante disso, identificou-se a necessidade de projetar uma arquitetura composta de um módulo responsável por obter os dados da estação meteorológica, um módulo com o papel de gerenciar os dados obtidos e por fim, um módulo para exibir as informações, ver figura \ref{img:modulos}.
+Inicialmente, buscou-se compreender a arquitetura do sistema como um todo, levando em consideração o objetivo geral do projeto. Diante disso, identificou-se a necessidade de projetar uma arquitetura composta de um módulo responsável por obter os dados da estação meteorológica, um módulo com o papel de gerenciar os dados obtidos e, por fim, um módulo para exibir as informações, ver figura \ref{img:modulos}.
 
 \imagem{0.6}{modulos}{Módulos do sistema}{O Autor} 
 \newpage
@@ -94,7 +94,7 @@ Angular é uma plataforma, mantida pela Google, que torna fácil a criação de 
 
 No caso do \textit{Ionic Framework}, o Angular é responsável pelo pilar base da arquitetura, a API de componentes. Os componentes são os blocos de construção da interface de usuário do aplicativo móvel \cite{SITEIONIC}.
 
-A escolha desse \textit{framework} deve-se ao fato dele ser completamente gratuito, de código aberto (licenciado sob a licença MIT) e seguir o modelo de arquitetura \textit{cross-platform} híbrida (figura \ref{img:hybrid}), possibilitando a utilização de tecnologias \textit{Web} para construção de aplicativos e também a distribuição/instalação do \textit{APP} via o \textit{Market Place} da plataforma Android \cite{SITEIONIC}. O Ionic será empregado no desenvolvimento da interface de usuário do sistema, ou seja, o \textit{front-end} da aplicação.
+A escolha desse \textit{framework} deve-se ao fato dele ser completamente gratuito, de código aberto (licenciado sob a licença MIT) e seguir o modelo de arquitetura \textit{cross-platform} híbrida (figura \ref{img:hybrid}), possibilitando a utilização de tecnologias \textit{Web} para construção de aplicativos e também a distribuição/instalação do \textit{APP} via o \textit{Market Place} da plataforma Android \cite{SITEIONIC}. O Ionic foi empregado no desenvolvimento da interface de usuário do sistema, ou seja, o \textit{front-end} da aplicação.
 
 \imagem{0.22}{hybrid}{Modelo de aplicação \textit{cross-platform} híbrida}{\citeonline{raj2012study} (Traduzido)}
 
@@ -106,14 +106,14 @@ O \text{Node.js} é um ambiente de tempo de execução JavaScript assíncrono ba
     
 O \textit{Node.js} foi utilizado no escopo deste projeto para criação de um serviço responsável pela obtenção dos dados da estação meteorológica, empregando uma comunicação serial através de um \textit{socket TCP}, e pela inserção posterior desses no banco de dados. Há também outro serviço para a recuperação dos dados à serem usados na aplicação cliente, ou seja, o serviço terá o papel de fornecer uma API que por meio de requisições HTTP insira e recupere informações da base de dados.
 
-A motivação da escolha dessa tecnologia é baseada nas duas características seguintes, o código do software é aberto e o fato da tecnologia também usar Javascript torna natural a integração com aplicações \textit{cross-platform} que utilizam da mesma linguagem de programação. Além de facilitar a comunicação com a base de dados.
+A motivação da escolha dessa tecnologia é baseada em duas características; o código do software é aberto e o fato da tecnologia também usar Javascript torna natural a integração com aplicações \textit{cross-platform} que utilizam da mesma linguagem de programação, além de facilitar a comunicação com a base de dados.
 
 
 \subsection{MongoDB} \label{subsec:MongoDB}
 
 O MongoDB é um banco de dados não relacional baseado em documentos, que armazena os dados em um formato semelhante ao Json. O software é grátis e de código aberto, licenciado sob a \textit{GNU Affero General Public License}. É adotado por grandes empresas como \textit{Adobe, Twitter, GitHub e Amazon}. A adoção desse banco de dados é justificada pela sua consistência, velocidade, escalabilidade e facilidade de utilização \cite{SITEMONGODB}. Além disso, os dados a serem trabalhados são do tipo chave-valor simples e não requerem uma base de dados relacional.
 
-O banco de dados será usado majoritariamente para guardar as informações das variáveis climáticas provenientes das leituras da estação meteorológica, com a finalidade de manter um histórico das variações. Pois, o armazenamento disponível na estação é limitado e os dados são substituídos por novos à medida que as novas leituras ocorrem.
+O banco de dados é usado majoritariamente para guardar as informações das variáveis climáticas provenientes das leituras da estação meteorológica, com a finalidade de manter um histórico das variações, pois, o armazenamento disponível na estação é limitado e os dados são substituídos por novos à medida que as novas leituras ocorrem.
 
 
 
